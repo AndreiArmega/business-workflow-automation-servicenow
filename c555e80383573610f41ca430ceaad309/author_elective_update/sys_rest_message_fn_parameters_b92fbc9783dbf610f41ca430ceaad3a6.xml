@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>baseURL</name>
+        <rest_message_function display_value="Get File">daceb8db83dbf610f41ca430ceaad306</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 13:21:39</sys_created_on>
+        <sys_id>b92fbc9783dbf610f41ca430ceaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>baseURL</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_b92fbc9783dbf610f41ca430ceaad3a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 13:21:39</sys_updated_on>
+        <type>string</type>
+        <value>https://141.85.227.171:8123</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</application>
+        <file_path/>
+        <instance_id>3d0d6695ebe46a98cbbffceacad0cdcc</instance_id>
+        <instance_name>dev312356</instance_name>
+        <name>sys_rest_message_fn_parameters_b92fbc9783dbf610f41ca430ceaad3a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>baseURL</name><rest_message_function display_value="Get File">daceb8db83dbf610f41ca430ceaad306</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-03 13:21:39</sys_created_on><sys_id>b92fbc9783dbf610f41ca430ceaad3a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>baseURL</sys_name><sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package><sys_policy/><sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope><sys_update_name>sys_rest_message_fn_parameters_b92fbc9783dbf610f41ca430ceaad3a6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-03 13:21:39</sys_updated_on><type>string</type><value>https://141.85.227.171:8123</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-89260744</payload_hash>
+        <record_name>baseURL</record_name>
+        <reverted_from/>
+        <source>0155e80383573610f41ca430ceaad39b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 13:21:39</sys_created_on>
+        <sys_id>f53ffc1f83dbf610f41ca430ceaad3c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cb3dc84100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 13:21:39</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>b53ffc1fe9dbf6106ec3630f9373f5c2</update_guid>
+        <update_guid_history>b53ffc1fe9dbf6106ec3630f9373f5c2:-89260744</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 16:17:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>78c5a83f1a2b4b16982f05586d2b6aa4</sys_id>
+        <sys_metadata>b92fbc9783dbf610f41ca430ceaad3a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>baseURL</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_parent display_value="Get File">daceb8db83dbf610f41ca430ceaad306</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_scope_delete display_value="">6ae1d7623fe74d26993c7726546e8fc4</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_b92fbc9783dbf610f41ca430ceaad3a6</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_b92fbc9783dbf610f41ca430ceaad3a6">f53ffc1f83dbf610f41ca430ceaad3c3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 16:17:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

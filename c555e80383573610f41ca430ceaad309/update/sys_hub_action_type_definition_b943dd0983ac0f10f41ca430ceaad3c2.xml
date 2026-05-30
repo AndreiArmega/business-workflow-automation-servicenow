@@ -1,0 +1,1861 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>create_we_invoice_line_array</internal_name>
+        <label_cache>[{"name":"{{action.record}}","label":"action➛Record","type":"action","ref":"","reference_display":"We Invoice Lines","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[af1a62d6-1c10-4c53-bcac-ac5bfdb44bc7].field_list}}","label":"step➛Script step➛field_list","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>57d3d1c983ac0f10f41ca430ceaad349</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Create Fields Array WE Invoice line</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:21:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b943dd0983ac0f10f41ca430ceaad3c2</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Create Fields Array WE Invoice line</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_b943dd0983ac0f10f41ca430ceaad3c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=b943dd0983ac0f10f41ca430ceaad3c2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b943dd0983ac0f10f41ca430ceaad3c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>b943dd0983ac0f10f41ca430ceaad3c2</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>96d351c983ac0f10f41ca430ceaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">d2d351c983ac0f10f41ca430ceaad39d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>b943dd0983ac0f10f41ca430ceaad3c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>dad351c983ac0f10f41ca430ceaad3ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 17:32:15</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">cad351c983ac0f10f41ca430ceaad381</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b943dd0983ac0f10f41ca430ceaad3c2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_list</field>
+        <id>b943dd0983ac0f10f41ca430ceaad3c2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>5ad351c983ac0f10f41ca430ceaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</table>
+        <value>{{step[af1a62d6-1c10-4c53-bcac-ac5bfdb44bc7].field_list}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>b943dd0983ac0f10f41ca430ceaad3c2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>d2d351c983ac0f10f41ca430ceaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>b943dd0983ac0f10f41ca430ceaad3c2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>9ed351c983ac0f10f41ca430ceaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=b943dd0983ac0f10f41ca430ceaad3c2^sys_idNOT INc6d351c983ac0f10f41ca430ceaad331"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</action>
+        <cid>af1a62d6-1c10-4c53-bcac-ac5bfdb44bc7</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>c6d351c983ac0f10f41ca430ceaad331</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:23</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6d351c983ac0f10f41ca430ceaad331"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c6d351c983ac0f10f41ca430ceaad331</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>02d351c983ac0f10f41ca430ceaad37a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:23</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var fieldList = [];&#13;
+    var gr = inputs.record;&#13;
+&#13;
+    // 1. Define the fields you want to skip&#13;
+    var excludeList = ['u_invoice', 'u_invoiced', 'invoice', 'invoiced', 'sys_id', 'u_ai_processed'];&#13;
+&#13;
+    // 2. Define your hardcoded fields to always include (if they have data)&#13;
+    var hardcodedFields = ['description', 'quantity', 'price_per_unit', 'total'];&#13;
+&#13;
+    if (gr &amp;&amp; gr.isValidRecord()) {&#13;
+        var fields = gr.getElements();&#13;
+        &#13;
+        for (var i = 0; i &lt; fields.length; i++) {&#13;
+            var field = fields[i];&#13;
+            var name = field.getName();&#13;
+&#13;
+            var isTargetField = name.startsWith('u_') || hardcodedFields.indexOf(name) !== -1;&#13;
+&#13;
+            if (isTargetField &amp;&amp; !field.nil() &amp;&amp; excludeList.indexOf(name) === -1) {&#13;
+                fieldList.push(name);&#13;
+            }&#13;
+        }&#13;
+    }&#13;
+&#13;
+    outputs.field_list = fieldList;&#13;
+&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c6d351c983ac0f10f41ca430ceaad331</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>82d351c983ac0f10f41ca430ceaad379</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6d351c983ac0f10f41ca430ceaad331"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c6d351c983ac0f10f41ca430ceaad331</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>82d351c983ac0f10f41ca430ceaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c6d351c983ac0f10f41ca430ceaad331</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>42d351c983ac0f10f41ca430ceaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_c6d351c983ac0f10f41ca430ceaad331</table>
+        <value>{{action.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>c6d351c983ac0f10f41ca430ceaad331</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>ced351c983ac0f10f41ca430ceaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c6d351c983ac0f10f41ca430ceaad331^id=c6d351c983ac0f10f41ca430ceaad331"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=c6d351c983ac0f10f41ca430ceaad331"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c6d351c983ac0f10f41ca430ceaad331"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c6d351c983ac0f10f41ca430ceaad331^sys_idNOT INc6d351c983ac0f10f41ca430ceaad347"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">c6d351c983ac0f10f41ca430ceaad331</model>
+        <model_id>c6d351c983ac0f10f41ca430ceaad331</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_c6d351c983ac0f10f41ca430ceaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1815796_itsmgr_0_we_invoice_lines">x_1815796_itsmgr_0_we_invoice_lines</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>c6d351c983ac0f10f41ca430ceaad347</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c6d351c983ac0f10f41ca430ceaad331^sys_idNOT INc2d351c983ac0f10f41ca430ceaad367"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD82d351c949ac0f105937077d2727804d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>c555e80383573610f41ca430ceaad309</scope_name>
+        <serialized_content>{"FlowDesigner:FD82d351c949ac0f105937077d2727804d":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD82d351c949ac0f105937077d2727804d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"field_list\",\"mandatory\":\"false\",\"child_name\":\"field_list_child0\",\"uiUniqueId\":\"95f67afa-25ed-4a1c-803a-5f8031a9889f\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD82d351c949ac0f105937077d2727804d\",\"child_label\":\"field_list_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7467261b-0646-477b-9954-79fbcac90c79\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86d351c983ac0f10f41ca430ceaad34d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:51</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=field_list_child0,child_name=field_list_child0,child_type=string,child_type_label=String,child_uiUniqueId=7467261b-0646-477b-9954-79fbcac90c79,co_type_name=FD82d351c949ac0f105937077d2727804d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=95f67afa-25ed-4a1c-803a-5f8031a9889f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>field_list</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>field_list</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">c6d351c983ac0f10f41ca430ceaad331</model>
+        <model_id>c6d351c983ac0f10f41ca430ceaad331</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c6d351c983ac0f10f41ca430ceaad331</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>c2d351c983ac0f10f41ca430ceaad367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c6d351c983ac0f10f41ca430ceaad331"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>field_list</element>
+        <help/>
+        <hint/>
+        <label>field_list</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c6d351c983ac0f10f41ca430ceaad331</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>c6d351c983ac0f10f41ca430ceaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=b943dd0983ac0f10f41ca430ceaad3c2^sys_idNOT IN42d351c983ac0f10f41ca430ceaad314"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=65784454-0899-41a6-8b30-3bd3cadce54c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1815796_itsmgr_0_we_invoice_lines</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</model>
+        <model_id>b943dd0983ac0f10f41ca430ceaad3c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1815796_itsmgr_0_we_invoice_lines">x_1815796_itsmgr_0_we_invoice_lines</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>42d351c983ac0f10f41ca430ceaad314</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=42d351c983ac0f10f41ca430ceaad314"/>
+    <sys_hub_action_output action="delete_multiple" query="model=b943dd0983ac0f10f41ca430ceaad3c2^sys_idNOT IN1ed351c983ac0f10f41ca430ceaad389,cad351c983ac0f10f41ca430ceaad381,d2d351c983ac0f10f41ca430ceaad39d"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0ad351c9f1ac0f1001fc6b14c6ff0e80</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>c555e80383573610f41ca430ceaad309</scope_name>
+        <serialized_content>{"FlowDesigner:FD0ad351c9f1ac0f1001fc6b14c6ff0e80":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD0ad351c9f1ac0f1001fc6b14c6ff0e80.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Field List\",\"mandatory\":\"false\",\"child_name\":\"field_list_child0\",\"uiUniqueId\":\"1a9f3219-55e7-427f-9e40-522c6c313fe2\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD0ad351c9f1ac0f1001fc6b14c6ff0e80\",\"child_label\":\"Field List_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"c9eedc1b-9c31-459e-87be-2679d31bbd02\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0ed351c983ac0f10f41ca430ceaad380</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:51</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Field List_child0,child_name=field_list_child0,child_type=string,child_type_label=String,child_uiUniqueId=c9eedc1b-9c31-459e-87be-2679d31bbd02,co_type_name=FD0ad351c9f1ac0f1001fc6b14c6ff0e80,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=1a9f3219-55e7-427f-9e40-522c6c313fe2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>field_list</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Field List</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</model>
+        <model_id>b943dd0983ac0f10f41ca430ceaad3c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>1ed351c983ac0f10f41ca430ceaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1ed351c983ac0f10f41ca430ceaad389"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1ed351c983ac0f10f41ca430ceaad389"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bbe58074-5ab0-4a69-b067-47af232e453e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</model>
+        <model_id>b943dd0983ac0f10f41ca430ceaad3c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>cad351c983ac0f10f41ca430ceaad381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cad351c983ac0f10f41ca430ceaad381"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cad351c983ac0f10f41ca430ceaad381"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=d5c08f3e-c0d8-4a06-9b25-156be5ee8660,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</model>
+        <model_id>b943dd0983ac0f10f41ca430ceaad3c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>d2d351c983ac0f10f41ca430ceaad39d</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d2d351c983ac0f10f41ca430ceaad39d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d2d351c983ac0f10f41ca430ceaad39d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b943dd0983ac0f10f41ca430ceaad3c2"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=b943dd0983ac0f10f41ca430ceaad3c2^sys_idNOT IN1ed351c983ac0f10f41ca430ceaad3b1"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>1ed351c983ac0f10f41ca430ceaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=1ed351c983ac0f10f41ca430ceaad3b1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>record</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>86d351c983ac0f10f41ca430ceaad31c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b943dd0983ac0f10f41ca430ceaad3c2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>52d351c983ac0f10f41ca430ceaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>field_list</element>
+        <help/>
+        <hint/>
+        <label>Field List</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:57</sys_created_on>
+        <sys_id>5ed351c983ac0f10f41ca430ceaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:23:56</sys_created_on>
+        <sys_id>86d351c983ac0f10f41ca430ceaad388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:23:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_b943dd0983ac0f10f41ca430ceaad3c2"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=b943dd0983ac0f10f41ca430ceaad3c2^sys_idNOT INffd315c983ac0f10f41ca430ceaad35a"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"ffd315c983ac0f10f41ca430ceaad35a","name":"plan","plan_signature":null}}</plan>
+        <snapshot>56b46f2183e00310f41ca430ceaad38e</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffd315c983ac0f10f41ca430ceaad35a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:53</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>create_we_invoice_line_array</internal_name>
+        <label_cache>[{"name":"{{action.record}}","label":"action➛Record","type":"action","ref":"","reference_display":"We Invoice Lines","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[af1a62d6-1c10-4c53-bcac-ac5bfdb44bc7].field_list}}","label":"step➛Script step➛field_list","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Create Fields Array WE Invoice line</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Create Fields Array WE Invoice line">b943dd0983ac0f10f41ca430ceaad3c2</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>57d3d1c983ac0f10f41ca430ceaad349</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:55</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=57d3d1c983ac0f10f41ca430ceaad349"/>
+    <sys_variable_value action="delete_multiple" query="document_key=57d3d1c983ac0f10f41ca430ceaad349"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>57d3d1c983ac0f10f41ca430ceaad349</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>23d3d1c983ac0f10f41ca430ceaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">afd3d1c983ac0f10f41ca430ceaad3a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>57d3d1c983ac0f10f41ca430ceaad349</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>67d3d1c983ac0f10f41ca430ceaad3b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 17:32:19</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">63d3d1c983ac0f10f41ca430ceaad386</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=57d3d1c983ac0f10f41ca430ceaad349"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_list</field>
+        <id>57d3d1c983ac0f10f41ca430ceaad349</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>e3d3d1c983ac0f10f41ca430ceaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</table>
+        <value>{{step[af1a62d6-1c10-4c53-bcac-ac5bfdb44bc7].field_list}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>57d3d1c983ac0f10f41ca430ceaad349</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>6fd3d1c983ac0f10f41ca430ceaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>57d3d1c983ac0f10f41ca430ceaad349</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>2bd3d1c983ac0f10f41ca430ceaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=57d3d1c983ac0f10f41ca430ceaad349^sys_idNOT IN57d3d1c983ac0f10f41ca430ceaad35f"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Fields Array WE Invoice line">57d3d1c983ac0f10f41ca430ceaad349</action>
+        <cid>af1a62d6-1c10-4c53-bcac-ac5bfdb44bc7</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:01</sys_created_on>
+        <sys_id>57d3d1c983ac0f10f41ca430ceaad35f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:52</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=57d3d1c983ac0f10f41ca430ceaad35f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>57d3d1c983ac0f10f41ca430ceaad35f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>63d3d1c983ac0f10f41ca430ceaad37e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>57d3d1c983ac0f10f41ca430ceaad35f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>a7d3d1c983ac0f10f41ca430ceaad37e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:52</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var fieldList = [];&#13;
+    var gr = inputs.record;&#13;
+&#13;
+    // 1. Define the fields you want to skip&#13;
+    var excludeList = ['u_invoice', 'u_invoiced', 'invoice', 'invoiced', 'sys_id', 'u_ai_processed'];&#13;
+&#13;
+    // 2. Define your hardcoded fields to always include (if they have data)&#13;
+    var hardcodedFields = ['description', 'quantity', 'price_per_unit', 'total'];&#13;
+&#13;
+    if (gr &amp;&amp; gr.isValidRecord()) {&#13;
+        var fields = gr.getElements();&#13;
+        &#13;
+        for (var i = 0; i &lt; fields.length; i++) {&#13;
+            var field = fields[i];&#13;
+            var name = field.getName();&#13;
+&#13;
+            var isTargetField = name.startsWith('u_') || hardcodedFields.indexOf(name) !== -1;&#13;
+&#13;
+            if (isTargetField &amp;&amp; !field.nil() &amp;&amp; excludeList.indexOf(name) === -1) {&#13;
+                fieldList.push(name);&#13;
+            }&#13;
+        }&#13;
+    }&#13;
+&#13;
+    outputs.field_list = fieldList;&#13;
+&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=57d3d1c983ac0f10f41ca430ceaad35f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>57d3d1c983ac0f10f41ca430ceaad35f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>6bd3d1c983ac0f10f41ca430ceaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>57d3d1c983ac0f10f41ca430ceaad35f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>e7d3d1c983ac0f10f41ca430ceaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_57d3d1c983ac0f10f41ca430ceaad35f</table>
+        <value>{{action.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>57d3d1c983ac0f10f41ca430ceaad35f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>afd3d1c983ac0f10f41ca430ceaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_57d3d1c983ac0f10f41ca430ceaad35f^id=57d3d1c983ac0f10f41ca430ceaad35f"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=57d3d1c983ac0f10f41ca430ceaad35f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=57d3d1c983ac0f10f41ca430ceaad35f"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=57d3d1c983ac0f10f41ca430ceaad35f^sys_idNOT IN13d3d1c983ac0f10f41ca430ceaad366"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">57d3d1c983ac0f10f41ca430ceaad35f</model>
+        <model_id>57d3d1c983ac0f10f41ca430ceaad35f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_57d3d1c983ac0f10f41ca430ceaad35f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1815796_itsmgr_0_we_invoice_lines">x_1815796_itsmgr_0_we_invoice_lines</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>13d3d1c983ac0f10f41ca430ceaad366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=57d3d1c983ac0f10f41ca430ceaad35f^sys_idNOT INdfd3d1c983ac0f10f41ca430ceaad36d"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD1fd3d1c963ac0f101e801dba3bb60a6c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>c555e80383573610f41ca430ceaad309</scope_name>
+        <serialized_content>{"FlowDesigner:FD1fd3d1c963ac0f101e801dba3bb60a6c":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD1fd3d1c963ac0f101e801dba3bb60a6c.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"field_list\",\"mandatory\":\"false\",\"child_name\":\"field_list_child0\",\"uiUniqueId\":\"95f67afa-25ed-4a1c-803a-5f8031a9889f\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD1fd3d1c963ac0f101e801dba3bb60a6c\",\"child_label\":\"field_list_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7467261b-0646-477b-9954-79fbcac90c79\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13d3d1c983ac0f10f41ca430ceaad36d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:52</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=field_list_child0,child_name=field_list_child0,child_type=string,child_type_label=String,child_uiUniqueId=7467261b-0646-477b-9954-79fbcac90c79,co_type_name=FD1fd3d1c963ac0f101e801dba3bb60a6c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=95f67afa-25ed-4a1c-803a-5f8031a9889f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>field_list</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>field_list</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">57d3d1c983ac0f10f41ca430ceaad35f</model>
+        <model_id>57d3d1c983ac0f10f41ca430ceaad35f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_57d3d1c983ac0f10f41ca430ceaad35f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>dfd3d1c983ac0f10f41ca430ceaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=57d3d1c983ac0f10f41ca430ceaad35f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>field_list</element>
+        <help/>
+        <hint/>
+        <label>field_list</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_57d3d1c983ac0f10f41ca430ceaad35f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>2bd3d1c983ac0f10f41ca430ceaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=57d3d1c983ac0f10f41ca430ceaad349^sys_idNOT IN17d3d1c983ac0f10f41ca430ceaad350"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=65784454-0899-41a6-8b30-3bd3cadce54c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1815796_itsmgr_0_we_invoice_lines</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create Fields Array WE Invoice line">57d3d1c983ac0f10f41ca430ceaad349</model>
+        <model_id>57d3d1c983ac0f10f41ca430ceaad349</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1815796_itsmgr_0_we_invoice_lines">x_1815796_itsmgr_0_we_invoice_lines</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:01</sys_created_on>
+        <sys_id>17d3d1c983ac0f10f41ca430ceaad350</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17d3d1c983ac0f10f41ca430ceaad350"/>
+    <sys_hub_action_output action="delete_multiple" query="model=57d3d1c983ac0f10f41ca430ceaad349^sys_idNOT IN63d3d1c983ac0f10f41ca430ceaad386,afd3d1c983ac0f10f41ca430ceaad399,afd3d1c983ac0f10f41ca430ceaad3a0"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=bbe58074-5ab0-4a69-b067-47af232e453e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Fields Array WE Invoice line">57d3d1c983ac0f10f41ca430ceaad349</model>
+        <model_id>57d3d1c983ac0f10f41ca430ceaad349</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>63d3d1c983ac0f10f41ca430ceaad386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=63d3d1c983ac0f10f41ca430ceaad386"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=63d3d1c983ac0f10f41ca430ceaad386"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDafd3d1c9e1ac0f108d9056563f808184</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>c555e80383573610f41ca430ceaad309</scope_name>
+        <serialized_content>{"FlowDesigner:FDafd3d1c9e1ac0f108d9056563f808184":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDafd3d1c9e1ac0f108d9056563f808184.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Field List\",\"mandatory\":\"false\",\"child_name\":\"field_list_child0\",\"uiUniqueId\":\"1a9f3219-55e7-427f-9e40-522c6c313fe2\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDafd3d1c9e1ac0f108d9056563f808184\",\"child_label\":\"Field List_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"c9eedc1b-9c31-459e-87be-2679d31bbd02\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a3d3d1c983ac0f10f41ca430ceaad385</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:52</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Field List_child0,child_name=field_list_child0,child_type=string,child_type_label=String,child_uiUniqueId=c9eedc1b-9c31-459e-87be-2679d31bbd02,co_type_name=FDafd3d1c9e1ac0f108d9056563f808184,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=1a9f3219-55e7-427f-9e40-522c6c313fe2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>field_list</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Field List</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Create Fields Array WE Invoice line">57d3d1c983ac0f10f41ca430ceaad349</model>
+        <model_id>57d3d1c983ac0f10f41ca430ceaad349</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>afd3d1c983ac0f10f41ca430ceaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=afd3d1c983ac0f10f41ca430ceaad399"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=afd3d1c983ac0f10f41ca430ceaad399"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=d5c08f3e-c0d8-4a06-9b25-156be5ee8660,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Fields Array WE Invoice line">57d3d1c983ac0f10f41ca430ceaad349</model>
+        <model_id>57d3d1c983ac0f10f41ca430ceaad349</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>afd3d1c983ac0f10f41ca430ceaad3a0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 18:13:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=afd3d1c983ac0f10f41ca430ceaad3a0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=afd3d1c983ac0f10f41ca430ceaad3a0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=57d3d1c983ac0f10f41ca430ceaad349"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=57d3d1c983ac0f10f41ca430ceaad349^sys_idNOT INa7d3d1c983ac0f10f41ca430ceaad3b5"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Create Fields Array WE Invoice line">57d3d1c983ac0f10f41ca430ceaad349</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>a7d3d1c983ac0f10f41ca430ceaad3b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a7d3d1c983ac0f10f41ca430ceaad3b5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>record</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:01</sys_created_on>
+        <sys_id>1fd3d1c983ac0f10f41ca430ceaad357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_57d3d1c983ac0f10f41ca430ceaad349"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>2bd3d1c983ac0f10f41ca430ceaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>field_list</element>
+        <help/>
+        <hint/>
+        <label>Field List</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>2bd3d1c983ac0f10f41ca430ceaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 18:24:02</sys_created_on>
+        <sys_id>2fd3d1c983ac0f10f41ca430ceaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 18:24:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_57d3d1c983ac0f10f41ca430ceaad349"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>b943dd0983ac0f10f41ca430ceaad3c2</sys_id>
+        <latest_snapshot>57d3d1c983ac0f10f41ca430ceaad349</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch6-01-16-2026_02-02-2026_1554.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

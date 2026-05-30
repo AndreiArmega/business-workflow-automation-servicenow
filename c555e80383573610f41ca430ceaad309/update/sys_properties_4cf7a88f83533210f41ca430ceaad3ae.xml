@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>If AI bot logging is enabled (true / false)</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1815796_itsmgr_0.ai_bot_logging_enabled</name>
+        <read_roles/>
+        <suffix>ai_bot_logging_enabled</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-02 17:01:56</sys_created_on>
+        <sys_id>4cf7a88f83533210f41ca430ceaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1815796_itsmgr_0.ai_bot_logging_enabled</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_properties_4cf7a88f83533210f41ca430ceaad3ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-02 17:01:56</sys_updated_on>
+        <type>string</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=4cf7a88f83533210f41ca430ceaad3ae"/>
+</record_update>

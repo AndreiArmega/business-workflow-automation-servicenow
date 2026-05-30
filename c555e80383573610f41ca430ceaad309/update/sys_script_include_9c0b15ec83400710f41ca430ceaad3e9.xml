@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1815796_itsmgr_0.AllCompaniesList</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AllCompaniesList</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AllCompaniesList = Class.create();
+AllCompaniesList.prototype = {
+    initialize: function() {
+        // Hardcode the Script Include's own Sys ID as the default location
+        this.defaultTable = 'sys_script_include';
+        this.defaultSysID = '9c0b15ec83400710f41ca430ceaad3e9'; // Your actual Sys ID
+    },
+
+    getCompanyList: function() {
+        var companyNames = [];
+        var gr = new GlideRecord('core_company');
+        gr.addActiveQuery();
+        gr.orderBy('name');
+        gr.query();
+        while (gr.next()) {
+            var name = gr.getValue('name');
+            if (name) companyNames.push(name.trim());
+        }
+        return companyNames.map(function(name, index) {
+            return (index + 1) + ". " + name;
+        }).join('\n');
+    },
+
+    /**
+     * Saves the list to the default record, clearing old versions first.
+     */
+    saveListToFile: function() {
+        var content = this.getCompanyList();
+        var fileName = "Latest_Company_List.txt";
+        
+        var grTarget = new GlideRecord(this.defaultTable);
+        if (grTarget.get(this.defaultSysID)) {
+            
+            // --- SCOPED-FRIENDLY CLEANUP ---
+            // Manually delete existing attachments for this record
+            var existingAtt = new GlideRecord('sys_attachment');
+            existingAtt.addQuery('table_name', this.defaultTable);
+            existingAtt.addQuery('table_sys_id', this.defaultSysID);
+            existingAtt.query();
+            existingAtt.deleteMultiple(); // Efficiently clears the old files
+
+            // --- WRITE NEW ATTACHMENT ---
+            var attachment = new GlideSysAttachment();
+            var attachID = attachment.write(grTarget, fileName, 'text/plain', content);
+            
+            return "Success! Old files cleared. New Sys ID: " + attachID;
+        }
+        return "Error: Default host record not found.";
+    },
+
+    type: 'AllCompaniesList'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-01 09:09:03</sys_created_on>
+        <sys_id>9c0b15ec83400710f41ca430ceaad3e9</sys_id>
+        <sys_mod_count>120</sys_mod_count>
+        <sys_name>AllCompaniesList</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_script_include_9c0b15ec83400710f41ca430ceaad3e9</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-04-26 16:05:06</sys_updated_on>
+    </sys_script_include>
+</record_update>

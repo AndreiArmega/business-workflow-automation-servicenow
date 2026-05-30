@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "chat": {&#13;
+    "model": "${model_id}",&#13;
+    "messages": []&#13;
+  }&#13;
+}</content>
+        <function_name>Create a new chat</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>iTSMgroup AI [ Create a new chat ]</qualified_name>
+        <rest_endpoint>${baseURL}/api/v1/chats/new</rest_endpoint>
+        <rest_message display_value="iTSMgroup AI">b9c8a8cb83573610f41ca430ceaad330</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-07 12:56:23</sys_created_on>
+        <sys_id>9a18052683440b10f41ca430ceaad366</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Create a new chat</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_rest_message_fn_9a18052683440b10f41ca430ceaad366</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-07 15:56:38</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

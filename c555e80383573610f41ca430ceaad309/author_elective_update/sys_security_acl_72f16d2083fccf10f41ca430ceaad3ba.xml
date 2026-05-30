@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1815796_itsmgr_0_invoice_lines</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_1815796_itsmgr_0_invoice_lines</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-08 16:24:26</sys_created_on>
+        <sys_id>72f16d2083fccf10f41ca430ceaad3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1815796_itsmgr_0_invoice_lines</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_security_acl_72f16d2083fccf10f41ca430ceaad3ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-08 16:24:26</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</application>
+        <file_path/>
+        <instance_id>3d0d6695ebe46a98cbbffceacad0cdcc</instance_id>
+        <instance_name>dev312356</instance_name>
+        <name>sys_security_acl_72f16d2083fccf10f41ca430ceaad3ba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Default access control on x_1815796_itsmgr_0_invoice_lines</description><local_or_existing>Existing</local_or_existing><name>x_1815796_itsmgr_0_invoice_lines</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-08 16:24:26</sys_created_on><sys_id>72f16d2083fccf10f41ca430ceaad3ba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1815796_itsmgr_0_invoice_lines</sys_name><sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package><sys_policy/><sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope><sys_update_name>sys_security_acl_72f16d2083fccf10f41ca430ceaad3ba</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-08 16:24:26</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-102201646</payload_hash>
+        <record_name>x_1815796_itsmgr_0_invoice_lines</record_name>
+        <reverted_from/>
+        <source>0155e80383573610f41ca430ceaad39b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-08 16:24:26</sys_created_on>
+        <sys_id>bef16d2083fccf10f41ca430ceaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e086793a60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-08 16:24:26</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>7ef16d2003fccf10c34bf770cb95cebe</update_guid>
+        <update_guid_history>7ef16d2003fccf10c34bf770cb95cebe:-102201646</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-08 16:26:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>4ff0943fcb95466a999faeef740222f9</sys_id>
+        <sys_metadata>72f16d2083fccf10f41ca430ceaad3ba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1815796_itsmgr_0_invoice_lines</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_parent display_value="">36f16d2083fccf10f41ca430ceaad3f8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_scope_delete display_value="">6ae1d7623fe74d26993c7726546e8fc4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_72f16d2083fccf10f41ca430ceaad3ba</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_72f16d2083fccf10f41ca430ceaad3ba">bef16d2083fccf10f41ca430ceaad3bf</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-08 16:26:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>baseURL</name>
+        <rest_message_function display_value="Create KB">7348a95f83d33a10f41ca430ceaad327</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 16:23:36</sys_created_on>
+        <sys_id>a5d8251383173a10f41ca430ceaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>baseURL</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_a5d8251383173a10f41ca430ceaad3f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 16:23:36</sys_updated_on>
+        <type>string</type>
+        <value>https://141.85.227.171:8123</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

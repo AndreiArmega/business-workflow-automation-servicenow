@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="91887b6c83680b10f41ca430ceaad38d" sys_domain="global" table="x_1815796_itsmgr_0_we_invoice_lines" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:27</sys_created_on>
+            <sys_id>9588bb6c83680b10f41ca430ceaad33a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quantity</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>d188bb6c83680b10f41ca430ceaad33c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>price_per_unit</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>9d88bb6c83680b10f41ca430ceaad33c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>1188bb6c83680b10f41ca430ceaad34a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>e988bb6c83680b10f41ca430ceaad34a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>a588bb6c83680b10f41ca430ceaad34b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>6188bb6c83680b10f41ca430ceaad34c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>performance_period</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>2d88bb6c83680b10f41ca430ceaad34c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:28</sys_created_on>
+            <sys_id>e588bb6c83680b10f41ca430ceaad34d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:28</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoiced</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:08:23</sys_created_on>
+            <sys_id>a5f87bac83680b10f41ca430ceaad33e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:08:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_who_worked</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-08 16:47:04</sys_created_on>
+            <sys_id>1627a5e083300350f41ca430ceaad3c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-08 16:47:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>associated_tasks</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-09 19:38:09</sys_created_on>
+            <sys_id>4ae71b7483780750f41ca430ceaad343</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">91887b6c83680b10f41ca430ceaad38d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-09 19:38:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1815796_itsmgr_0_we_invoice_lines</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-26 17:06:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>91887b6c83680b10f41ca430ceaad38d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1815796_itsmgr_0_we_invoice_lines</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+            <sys_update_name>sys_ui_section_91887b6c83680b10f41ca430ceaad38d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-26 17:06:27</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

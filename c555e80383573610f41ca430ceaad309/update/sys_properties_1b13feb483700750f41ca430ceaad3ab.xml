@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1815796_itsmgr_0.Performance Period Prompt</name>
+        <read_roles/>
+        <suffix>Performance Period Prompt</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-09 16:58:04</sys_created_on>
+        <sys_id>1b13feb483700750f41ca430ceaad3ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_1815796_itsmgr_0.Performance Period Prompt</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_properties_1b13feb483700750f41ca430ceaad3ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-09 17:20:11</sys_updated_on>
+        <type>string</type>
+        <value>### Role: You are a Precise ServiceNow Data Extractor. Your task is to identify and extract the performance period from document snippets. ### Constraints: * Anchor Verification: Look for the date associated specifically with terms like 'Leistungszeitraum', 'Service Period', or 'Date of Performance'.  Formatting:  Output must be Month Year. * No Prose: Provide only the result. No conversational filler, no periods at the end, and no newlines. ### Task: Extract the service month and year from the provided text. ### Required Output Format:&lt;Year&gt;-&lt;Month_number&gt;-00 . We want the month to be a number in range 1 to 12. The format will look like the average yyyy-mm-dd date ### Text to analyze: ${description}.</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=1b13feb483700750f41ca430ceaad3ab"/>
+</record_update>

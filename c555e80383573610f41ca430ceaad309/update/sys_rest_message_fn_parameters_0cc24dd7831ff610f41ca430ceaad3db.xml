@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>files</name>
+        <rest_message_function display_value="Call Bot">6602c557831ff610f41ca430ceaad3fd</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 13:37:09</sys_created_on>
+        <sys_id>0cc24dd7831ff610f41ca430ceaad3db</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>files</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_0cc24dd7831ff610f41ca430ceaad3db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 14:05:55</sys_updated_on>
+        <type>string</type>
+        <value>{
+  "type": "file",
+  "id": "fcd6f98d-e0ab-4dbc-9188-18957b48599f"
+},
+{
+  "type": "file",
+  "id": "c7d7898b-e034-4e00-b9d2-04204528e884"
+},
+{
+  "type": "file",
+  "id": "301a5f6b-7769-4134-b84b-39581c751c84"
+}</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

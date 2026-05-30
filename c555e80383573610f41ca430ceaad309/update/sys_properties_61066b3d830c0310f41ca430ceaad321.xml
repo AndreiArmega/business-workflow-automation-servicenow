@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1815796_itsmgr_0.Invoice Prompt</name>
+        <read_roles/>
+        <suffix>Invoice Prompt</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 16:26:54</sys_created_on>
+        <sys_id>61066b3d830c0310f41ca430ceaad321</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>x_1815796_itsmgr_0.Invoice Prompt</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_properties_61066b3d830c0310f41ca430ceaad321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-09 17:15:32</sys_updated_on>
+        <type>string</type>
+        <value>### Role: You are a Precise Financial Data Extractor specialized in German Invoices. Your task is to identify and extract key data points from the provided document. ### Constraints: * Anchor Verification: For every value, identify the specific German label (e.g., 'Rechnungsnummer', 'Projektname', 'Umsatzsteuer', 'Gesamtbetrag', 'Beschreibung', 'Anzahl', 'Preis pro Einheit') on the page before extracting. Do not guess. * Strict Formats: Currencies and Quantities MUST be decimal (e.g., 0.00). Use a period (.) for decimals, NOT a comma. Remove thousands-separator periods (e.g., convert 46.363,13 to 46363.13). * Null Handling: If a field is missing, return NOT_FOUND. * No Prose: Provide only the structured data. No conversational filler. Information that is not to be confused. 'ITSMgroup' is the provider company NOT the client that must be identified. 'Bodenheim' is NOT a company, it is the location of the provider. ### Task: Extract the following fields: 1. Number: The value associated with 'Rechnungsnummer'. 2. Invoice date: The value associated with 'Rechnungsdatum'. 3. Tax amount: The value for 'Umsatzsteuer' or 'Steuer'. 4. Amount: The 'Rechnungsbetrag (brutto)' or final total. 5. Company: Identify the RECIPIENT/CUSTOMER. Look specifically at the 'Projektname' or 'Erfüllung der Beauftragung bei...' sections. Extract the specific end-customer name. 6. Description: The full text under 'Beschreibung' (include performance period and contract details). 7. Quantity: The value associated with 'Anzahl'. 8. Price per unit: The value associated with 'Preis pro Einheit'. ### Required Output Format: Number: &lt;value&gt;, Invoice date: &lt;value&gt;, Tax amount: &lt;value&gt;, Amount: &lt;value&gt;, Date approved: &lt;value&gt;, Company: &lt;value&gt;, Description: &lt;value&gt;, Quantity: &lt;value&gt;, Price per unit: &lt;value&gt;. Do not insert any other text after &lt;value&gt; like square brackets with numbers or any type of parentheses. Do not insert [1] after values, keep only the values. Do not insert [1] after values, keep only the values. Do not insert [1] after values, keep only the values.Do not insert [1] after values, keep only the values.Do not insert [1] after values, keep only the values.Do not insert [1] after values, keep only the values.Do not insert [1] after values, keep only the values.</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=61066b3d830c0310f41ca430ceaad321"/>
+</record_update>

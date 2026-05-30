@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_analytics_bucket">
+    <sys_analytics_bucket action="INSERT_OR_UPDATE">
+        <analytics_channel display_value="NextExperience">c8ae7e45732130107d804c9885f6a7a5</analytics_channel>
+        <application_name>Invoice App</application_name>
+        <bucket_document_id>e1a60d1083480310f41ca430ceaad371</bucket_document_id>
+        <bucket_metadata/>
+        <bucket_metadata_customer_override/>
+        <bucket_table_name>sys_ux_page_registry</bucket_table_name>
+        <bucket_type/>
+        <enable_unauthenticated_user_tracking>false</enable_unauthenticated_user_tracking>
+        <enabled>true</enabled>
+        <internal_name_for_index>x_1815796_itsmgr_0.sys_ux_page_registry.e1a60d1083480310f41ca430ceaad371</internal_name_for_index>
+        <sys_class_name>sys_analytics_bucket</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-31 13:13:05</sys_created_on>
+        <sys_id>59c98d9883480310f41ca430ceaad3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Invoice App</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_analytics_bucket_59c98d9883480310f41ca430ceaad3aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-31 13:13:05</sys_updated_on>
+    </sys_analytics_bucket>
+</record_update>

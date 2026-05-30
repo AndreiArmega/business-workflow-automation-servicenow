@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>apiKey</name>
+        <rest_message_function display_value="Update Chat Session">ea4e01a683840b10f41ca430ceaad3c2</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-07 13:22:09</sys_created_on>
+        <sys_id>81fe816a83840b10f41ca430ceaad37b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>apiKey</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_81fe816a83840b10f41ca430ceaad37b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-07 13:23:10</sys_updated_on>
+        <type>string</type>
+        <value>sk-1ac0a26b60fb47959072b6b1089774cd</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

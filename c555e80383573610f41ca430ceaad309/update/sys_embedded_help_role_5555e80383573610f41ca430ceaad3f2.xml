@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1815796_itsmgr_0.user" name="x_1815796_itsmgr_0.user">9d55e80383573610f41ca430ceaad3ef</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-02 16:50:05</sys_created_on>
+        <sys_id>5555e80383573610f41ca430ceaad3f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9d55e80383573610f41ca430ceaad3ef</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_embedded_help_role_5555e80383573610f41ca430ceaad3f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-02 16:50:05</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

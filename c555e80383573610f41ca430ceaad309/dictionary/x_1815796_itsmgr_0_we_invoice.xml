@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="db2f9d90838c0310f41ca430ceaad331" extends="sys_import_set_row" label="We Invoice" max_length="40" name="x_1815796_itsmgr_0_we_invoice" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Invoice date" label="Invoice date" max_length="40" name="u_invoice_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Number" display="true" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tax amount" label="Tax amount" max_length="40" name="u_tax_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Amount" label="Amount" max_length="40" name="u_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=External reference" label="External reference" max_length="40" name="u_external_reference" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Invoicing cost center" label="Invoicing cost center" max_length="40" name="u_invoicing_cost_center" type="string"/>
+        <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short description" label="Short description" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Date approved" label="Date approved" max_length="40" name="u_date_approved" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=To customer" label="To customer" max_length="40" name="u_to_customer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=To cost center" label="To cost center" max_length="40" name="u_to_cost_center" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Invoice due date" label="Invoice due date" max_length="40" name="u_invoice_due_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=For delivery" label="For delivery" max_length="40" name="u_for_delivery" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Owner" label="Owner" max_length="40" name="u_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+    </element>
+</database>

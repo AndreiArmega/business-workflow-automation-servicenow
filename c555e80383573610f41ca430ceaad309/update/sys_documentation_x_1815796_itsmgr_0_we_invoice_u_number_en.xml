@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_number" label="Number" language="en" table="x_1815796_itsmgr_0_we_invoice">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_number</element>
+            <help/>
+            <hint/>
+            <label>Number</label>
+            <language>en</language>
+            <name>x_1815796_itsmgr_0_we_invoice</name>
+            <plural>Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-31 14:46:37</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Number</sys_name>
+            <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+            <sys_update_name>sys_documentation_x_1815796_itsmgr_0_we_invoice_u_number_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-31 14:46:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

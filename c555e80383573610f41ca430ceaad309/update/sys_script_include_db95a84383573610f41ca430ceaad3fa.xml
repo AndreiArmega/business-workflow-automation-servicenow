@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1815796_itsmgr_0.AiBotHelper</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AiBotHelper</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AiBotHelper = Class.create();
+AiBotHelper.prototype = {
+    initialize: function() {
+        this.loggingEnabled = gs.getProperty('x_1815796_itsmgr_0.ai_bot_logging_enabled', 'false');
+        this.baseUrl = gs.getProperty('x_1815796_itsmgr_0.ai_bot_url', 'https://141.85.227.171:8123');
+        this.apiKey = gs.getProperty('x_1815796_itsmgr_0.ai_bot_key', 'sk-1ac0a26b60fb47959072b6b1089774cd');
+
+    },
+
+    sendAttachmentToBot: function(attachment_sys_id) {
+        var result = {
+            'file_id': '',
+            'error_message': ''
+        };
+        var grAttachment = new GlideRecord('sys_attachment');
+
+        if (!grAttachment.get(attachment_sys_id)) {
+            result.error_message = 'Error: could not find attachment ' + attachment_sys_id;
+            return result;
+        }
+
+        try {
+            // 1. Call the Global logic that uses the bodyList and Packages
+            var helper = new global.GlobalMultipartHelper();
+            var payload = helper.buildMultipartAttachment(
+                attachment_sys_id,
+                grAttachment.getValue('file_name'),
+                grAttachment.getValue('content_type')
+            );
+            if (!payload.sys_id) {
+                result.error_message = "Failed to create multipart attachment in Global Bridge";
+                return result;
+            }
+
+            // 2. Setup the REST message
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Upload File');
+            //r.setRequestHeader("Accept", "application/json");
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setRequestHeader("Content-Type", 'multipart/form-data; boundary="' + payload.boundary + '"');
+            r.setRequestHeader("Content-length", payload.length.toString());
+
+            r.setRequestBodyFromAttachment(payload.sys_id);
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            // 3. Cleanup the temporary payload file
+            new GlideSysAttachment().deleteAttachment(payload.sys_id);
+
+            if (httpStatus.toString().startsWith('2')) {
+                result.file_id = JSON.parse(responseBody).id;
+            } else {
+                result.error_message = 'HTTP ' + httpStatus + ': ' + responseBody;
+            }
+        } catch (ex) {
+            result.error_message = ex.message;
+        }
+        return result;
+    },
+
+    deleteFilesFromBot: function(files) {
+        var result = {
+            'success': true,
+            'error_message': ''
+        };
+        if (files && files.length > 0) {
+            for (var i = 0; i < files.length; i++) {
+                try {
+                    var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Delete File');
+                    r.setStringParameterNoEscape('baseURL', this.baseUrl);
+                    r.setStringParameterNoEscape('apiKey', this.apiKey);
+                    r.setStringParameterNoEscape('fileId', files[i]);
+                    var response = r.execute();
+                    var responseBody = response.getBody();
+                    var httpStatus = response.getStatusCode();
+                    if (httpStatus.toString().startsWith('2')) {
+                        result.success = true;
+                    } else {
+                        result.error_message += 'Got status code ' + httpStatus.toString() + ' for file ' + files[i] + '.';
+                    }
+                } catch (ex) {
+                    result.error_message += 'Got exception ' + ex.message + ' for file ' + files[i] + '.';
+                }
+            }
+        }
+        return result;
+    },
+    sendMultipleAttachments: function(attachment_ids) {
+        var finalResults = [];
+
+        for (var i = 0; i < attachment_ids.length; i++) {
+            var currentId = attachment_ids[i];
+
+            var uploadStatus = this.sendAttachmentToBot(currentId);
+            finalResults.push({
+                'attachment_sys_id': currentId,
+                'file_id': uploadStatus.file_id,
+                'error_message': uploadStatus.error_message
+            });
+        }
+
+        return finalResults;
+    },
+
+
+    /**
+     * Function 1: AI/Subflow Logic
+     * Calls a Flow Designer Subflow to find a match.
+     */
+    findClosestCompany: function(company_name) {
+        if (!company_name) return "No name provided";
+
+        try {
+            var inputs = {};
+            inputs['company_name'] = company_name;
+
+            var promptText = gs.getProperty("x_1815796_itsmgr_0.ClosestCompanyPrompt") || "";
+            inputs['prompt'] = promptText.replace('${company}', company_name);
+
+            var result = sn_fd.FlowAPI.getRunner()
+                .subflow('x_1815796_itsmgr_0.get_closest_company_from_ai')
+                .inForeground()
+                .withInputs(inputs)
+                .run();
+
+            var outputs = result.getOutputs();
+
+            var match_by_ai = outputs['ai_matched_company'];
+
+            return match_by_ai || "AI returned no match";
+
+        } catch (ex) {
+            gs.error("AI DEBUG: Exception: " + ex.message);
+            return "Error: " + ex.message;
+        }
+    },
+
+    /**
+     * Function 2: Local Code Logic
+     * Uses a system property and a Script Include helper to find a match.
+     */
+    findClosestCompany2: function(company_name) {
+        if (!company_name) {
+            return "No name provided";
+        }
+        var finder = new global.FindClosestCompany();
+        var match_by_code = finder.findCompanyByCode(company_name);
+        return match_by_code;
+    },
+
+    _callBot: function(prompt, model, file_ids) {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Call Bot');
+            r.setStringParameterNoEscape('model', model);
+            r.setStringParameterNoEscape('files', file_ids);
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setStringParameterNoEscape('prompt', prompt);
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+
+            this._log('Request body is ' + r.getRequestBody());
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+            this._log('Http status is ' + httpStatus);
+            this._log('Response body is ' + responseBody);
+            if (!httpStatus.toString().startsWith('2')) {
+                return 'Error: Received http status ' + httpStatus;
+            }
+            return JSON.parse(responseBody)['choices'][0]['message']['content'];
+        } catch (ex) {
+            return 'Error: exception caught ' + ex.message;
+        }
+    },
+    // callBot2
+    _generateRequest: function(prompt, model, file_ids_string) {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Call Bot');
+
+            var fileObjects = [];
+            if (file_ids_string && file_ids_string.toString().trim() !== "") {
+                var idArray = file_ids_string.split(',');
+                for (var i = 0; i < idArray.length; i++) {
+                    var cleanId = idArray[i].trim();
+                    if (cleanId) {
+                        fileObjects.push(JSON.stringify({
+                            "type": "file",
+                            "id": cleanId
+                        }));
+                    }
+                }
+            }
+
+            var filesPayload = fileObjects.join(',');
+
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setStringParameterNoEscape('model', model);
+            r.setStringParameterNoEscape('prompt', prompt);
+
+            r.setStringParameterNoEscape('files', filesPayload);
+
+            r.setHttpTimeout(120000);
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            this._log('Sent Body: ' + r.getRequestBody());
+            this._log('HTTP Status: ' + httpStatus);
+
+            if (!httpStatus.toString().startsWith('2')) {
+                return 'Error: Received status ' + httpStatus + '. Body: ' + responseBody;
+            }
+
+            var parsedResponse = JSON.parse(responseBody);
+            if (parsedResponse && parsedResponse.choices && parsedResponse.choices[0]) {
+                return parsedResponse.choices[0].message.content;
+            } else {
+                return 'Error: No content in response. Body: ' + responseBody;
+            }
+
+        } catch (ex) {
+            return 'Error: exception caught ' + ex.message;
+        }
+    },
+    getFile: function(file_id) {
+        var result = {
+            success: false,
+            details: null,
+            error_message: ''
+        };
+
+        try {
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Get File');
+
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setStringParameterNoEscape('fileId', file_id);
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            gs.info('Get File Status: ' + httpStatus);
+
+            if (httpStatus.toString().startsWith('2')) {
+                result.success = true;
+                result.details = responseBody;
+            } else {
+                result.error_message = 'Error: Received HTTP status ' + httpStatus;
+            }
+        } catch (ex) {
+            result.error_message = ex.message;
+            gs.error('Get File Exception: ' + ex.message);
+        }
+
+        return result;
+    },
+	/**
+     * Step 1: Create a New Chat Session
+     */
+    createChatSession: function(model) {
+        try {
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Create a new chat');
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setStringParameterNoEscape('model_id', model || "gemma3:27b");
+            
+            var response = r.execute();
+            if (response.getStatusCode().toString().startsWith('2')) {
+                return JSON.parse(response.getBody()).id;
+            }
+            return "Error: " + response.getBody();
+        } catch (ex) {
+            return "Error: " + ex.message;
+        }
+    },
+
+    /**
+     * Step 2 & 3 & 4: Call Bot, Update Session, and Retrieve History
+     */
+    processChatUpdateAndRetrieve: function(chat_id, prompt, model, file_ids_string) {
+        var result = { 'ai_response': '', 'full_history': [], 'error': '' };
+
+        try {
+            // 1. Get the baseline history from the DB
+            var existingState = this.retrieveChat(chat_id);
+            var history = existingState.success ? existingState.messages : [];
+
+            // 2. Add the NEW prompt to our LOCAL array immediately
+            // This ensures it exists even if the AI call takes 10 seconds
+            history.push({ "role": "user", "content": prompt });
+
+            // 3. Call Bot with our local array
+            var aiAnswer = this._generateRequestWithId(prompt, model, file_ids_string, chat_id, history);
+            
+            if (aiAnswer.indexOf('Error:') === 0) {
+                result.error = aiAnswer;
+                return result;
+            }
+            result.ai_response = aiAnswer;
+
+            // 4. Add the AI response to our LOCAL array
+            history.push({ "role": "assistant", "content": aiAnswer });
+
+            // 5. Save the FINAL, complete array back to the DB
+            var updateRest = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Update Chat Session');
+            updateRest.setStringParameterNoEscape('baseURL', this.baseUrl);
+            updateRest.setRequestHeader("Authorization", "Bearer " + this.apiKey);
+            updateRest.setStringParameterNoEscape('chat_id', chat_id);
+            updateRest.setStringParameterNoEscape('model_id', model);
+            updateRest.setStringParameterNoEscape('messages_json', JSON.stringify(history));
+            
+            // Wait for the update to finish before moving on
+            var updateRes = updateRest.execute();
+            
+            // Set the output to our local, guaranteed complete array
+            result.full_history = history;
+
+        } catch (ex) {
+            result.error = "Exception: " + ex.message;
+        }
+        return result;
+    },
+
+    /**
+     * Mirror of your working _callBot function, but with chat_id support
+     */
+    _generateRequestWithId: function(prompt, model, file_ids_string, chat_id, history) {
+        try {
+            // Pointing to the NEW REST Message
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Call Bot 2');
+            
+            // 1. Combine History + New Prompt
+            var messagesArray = history || [];
+            // We push the new user prompt so the AI sees it as the latest turn
+            //messagesArray.push({ "role": "user", "content": prompt });
+
+            // 2. Set Parameters
+            r.setStringParameterNoEscape('model', model);
+            r.setStringParameterNoEscape('files', file_ids_string || ""); // Send as IDs (e.g. "id1,id2")
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+            r.setStringParameterNoEscape('chat_id', chat_id || "");
+            
+            // 3. Stringify the whole array for the REST Body
+            r.setStringParameterNoEscape('messages', JSON.stringify(messagesArray));
+
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            if (httpStatus.toString().startsWith('2')) {
+                var parsed = JSON.parse(responseBody);
+                if (parsed && parsed.choices && parsed.choices.length > 0) {
+                    return parsed.choices[0].message.content;
+                }
+            }
+            return 'Error: HTTP ' + httpStatus + " - " + responseBody;
+        } catch (ex) {
+            return 'Error in _generateRequestWithId: ' + ex.message;
+        }
+    },
+
+    retrieveChat: function(chat_id) {
+        var result = { 'success': false, 'messages': [], 'error': '' };
+        try {
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Retrieve Chat Session');
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setStringParameterNoEscape('chat_id', chat_id);
+            var response = r.execute();
+            if (response.getStatusCode().toString().startsWith('2')) {
+                var parsed = JSON.parse(response.getBody());
+                result.success = true;
+                result.messages = parsed.chat ? parsed.chat.messages : [];
+            } else {
+                result.error = response.getBody();
+            }
+        } catch (ex) { result.error = ex.message; }
+        return result;
+    },
+	deleteChatSession: function(chat_id) {
+        var result = {
+            'success': false,
+            'error_message': ''
+        };
+
+        if (!chat_id) {
+            result.error_message = "No Chat ID provided.";
+            return result;
+        }
+
+        try {
+            var r = new sn_ws.RESTMessageV2('x_1815796_itsmgr_0.iTSMgroup AI', 'Delete Chat Session');
+            
+            r.setStringParameterNoEscape('baseURL', this.baseUrl);
+            r.setStringParameterNoEscape('apiKey', this.apiKey);
+            r.setStringParameterNoEscape('chat_id', chat_id);
+
+            var response = r.execute();
+            var httpStatus = response.getStatusCode();
+            var responseBody = response.getBody();
+
+            if (httpStatus.toString().startsWith('2')) {
+                result.success = true;
+            } else {
+                result.error_message = 'HTTP ' + httpStatus + ': ' + responseBody;
+                this._log('Delete Chat failed: ' + responseBody);
+            }
+        } catch (ex) {
+            result.error_message = 'Exception: ' + ex.message;
+            gs.error('AiBotHelper.deleteChatSession Exception: ' + ex.message);
+        }
+
+        return result;
+    },
+
+    _log: function(msg) {
+        if (this.loggingEnabled) {
+            gs.info(msg, this.type);
+        }
+    },
+
+    type: 'AiBotHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-02 16:53:52</sys_created_on>
+        <sys_id>db95a84383573610f41ca430ceaad3fa</sys_id>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>AiBotHelper</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_script_include_db95a84383573610f41ca430ceaad3fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-12 14:53:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-03-31 12:59:36</sys_created_on>
+        <sys_id>7ba64d1083480310f41ca430ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x.1815796.invoice-app.*.canvas_user</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_security_acl display_value="x.1815796.invoice-app.*">73a64d1083480310f41ca430ceaad3b0</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_7ba64d1083480310f41ca430ceaad3e7</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-03-31 12:59:36</sys_updated_on>
+        <sys_user_role display_value="canvas_user" name="canvas_user">8536f54bc713330072b211d4d8c26080</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

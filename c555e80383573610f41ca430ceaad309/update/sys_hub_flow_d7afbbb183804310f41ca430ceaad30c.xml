@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2902000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>main_invoice_process_subflow</internal_name>
+        <label_cache>[{"name":"e3e32b4e-456d-425e-8764-79ac6f1b439c.Record","label":"1 - Look Up Record➛We Invoice Record","reference":"x_1815796_itsmgr_0_we_invoice","reference_display":"We Invoice","type":"reference","base_type":"reference","usedInstances":{"8d4361b8-9d0d-4419-933b-d07e43518fb6":["source_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.invoice","label":"Input➛Invoice","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e3e32b4e-456d-425e-8764-79ac6f1b439c":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f6f054ed-4095-4519-a898-7ea671fbafce","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8d4361b8-9d0d-4419-933b-d07e43518fb6.parameter","label":"2 - Get Attachments on Record➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment","type":"records","base_type":"records","usedInstances":{"39c15a05-2164-4ef2-9385-345921ad7130":["invoice_sys_id"],"00ff0ec0-5f59-4e0c-bdbe-f72400733285":["items"]},"attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.prompt","label":"Input➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5c8b64ef-7d20-4882-9303-267dc2f66b2f":["prompt"],"39c15a05-2164-4ef2-9385-345921ad7130":["prompt"],"c467f656-34a7-4e2a-8440-41d6916c0cc9":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f4d2eec9-5549-4f3c-842d-76aa0894aa58","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"00ff0ec0-5f59-4e0c-bdbe-f72400733285.item.sys_id","label":"3 - For Each➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","usedInstances":{"4f029814-9ba9-46e3-a728-3ca7e52d6924":["attachment_sys_id"],"ccab9888-029d-4a85-a3ac-bdd80a7afe80":["attachment_sys_id"],"c467f656-34a7-4e2a-8440-41d6916c0cc9":["invoice_sys_id"]}}]</label_cache>
+        <master_snapshot>cbc18c4a83804310f41ca430ceaad3de</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Main Invoice Process Subflow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:18:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7afbbb183804310f41ca430ceaad30c</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_name>Main Invoice Process Subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_hub_flow_d7afbbb183804310f41ca430ceaad30c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:08</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>9cca48c683044310f41ca430ceaad326</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d7afbbb183804310f41ca430ceaad30c^sys_idNOT IN93afbbb183804310f41ca430ceaad30d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d7afbbb183804310f41ca430ceaad30c</id>
+        <name>Main Invoice Process Subflow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:18:43</sys_created_on>
+        <sys_id>93afbbb183804310f41ca430ceaad30d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:18:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=93afbbb183804310f41ca430ceaad30d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d7afbbb183804310f41ca430ceaad30c^sys_idNOT IN62ef3bf183804310f41ca430ceaad35b,71b1884a83804310f41ca430ceaad330,a2ef3fb183804310f41ca430ceaad3de"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f4d2eec9-5549-4f3c-842d-76aa0894aa58</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>prompt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Prompt</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</model>
+        <model_id>d7afbbb183804310f41ca430ceaad30c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d7afbbb183804310f41ca430ceaad30c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:19:46</sys_created_on>
+        <sys_id>62ef3bf183804310f41ca430ceaad35b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:27:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=62ef3bf183804310f41ca430ceaad35b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f6f054ed-4095-4519-a898-7ea671fbafce</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Invoice</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</model>
+        <model_id>d7afbbb183804310f41ca430ceaad30c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d7afbbb183804310f41ca430ceaad30c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:27:38</sys_created_on>
+        <sys_id>71b1884a83804310f41ca430ceaad330</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:27:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=71b1884a83804310f41ca430ceaad330"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=13a0c706-b2d6-461b-bd66-855f061900be</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>model</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Model</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</model>
+        <model_id>d7afbbb183804310f41ca430ceaad30c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d7afbbb183804310f41ca430ceaad30c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:19:46</sys_created_on>
+        <sys_id>a2ef3fb183804310f41ca430ceaad3de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:27:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a2ef3fb183804310f41ca430ceaad3de"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d7afbbb183804310f41ca430ceaad30c^sys_idNOT IN57ff3ff183804310f41ca430ceaad3a2,80f4400683c04310f41ca430ceaad361,fd6ac08683044310f41ca430ceaad33b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Attachments on Record">082e70db0f4273003788001ea8767e02</action_type>
+        <action_type_parent display_value="Get Attachments on Record">31de959973c93300a3942ea3c4f6a774</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:20:05</sys_created_on>
+        <sys_id>57ff3ff183804310f41ca430ceaad3a2</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:44:42</sys_updated_on>
+        <ui_id>8d4361b8-9d0d-4419-933b-d07e43518fb6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/81VW0/bMBj9K1aegLUhvdCU8lSJsU3aQKITLxRFjvMl9eQ4mS+9rOp/3+dcCoWB0J7gBXL8Xc45Phb3W48n3sQLxn0IgyQO0mE/HATBIByPg6AHdByOQggGXseTNAesTLmAqPq74y2psA77JpcFZw5JuC4F3dy9OGALLhIF0pvcP3S8kiqcYEB5k+2zI7MpIRI0BoH9M6O4zLD9vSTbxitkSa5rlv8g7pYgpNvxhUocl17Hg7UBmQCuS6nQ0PFyKhNqCrXZIwpociPFI7Dg0uA0zxWvNf+Do5FX4CpTQGEM6tP9Z9TYVMNs4Ty6KQ0vZI0YGoumhxXC5vK6luAMhpRaYVqDEbEa50HpWDsaDad0tihWt+3CKy4rgc2hKBgV+y9q0IbYGtDuNiz/+cycGvn+/EpAQI4bo5yWJSJRqYolr7Yg6dzPBH74qShWyE7zTPqUOYU+ukn9K8QvK/iOKu7k/sAx2LyrbIp+W0ewFtxIi2p3sEAzxUszxXFLaFTsOk2Q2fDNjIwf86ALq/AqFDC8/Sdh3m5hAIN+PITu8GyUdIf9M+hi97AbnlM2SnvxcHDO/Nuqb7d7Gfr/TvtlwayzlHy7bCP/Djn7t1LpIbetnldkNtFPml0RTx7z3387/0bZd8Z/0D8Mv97oCGNG2cLtfOUpTJ8WfNBHcWjb4cvYO/+hXkYLOhmHWXDAW/Xe6clcnpxMGQOtieN1Oq2IEkeUWI3aiFkASZOoQor4FzDjk1k1gORWG6LAWCUJJdXz8ombeOPSRqTNY/zFNSnSVIMh8YZ86hEuyWelCkW+YvCEWzGD2p6KzJJy4UwhRRUNTZr8EFsisVIhVdcz9/y5R2iKj66l59phTfNSwATZKKIXhTJoNSNziy8raQt9vPksA+UzqzAoxq8K3V1VunDrhZvVKNtPceDpXLrJmWpHSliRL+6+63AcObgfrqPeuHcWno8ibnSeqSiIVhDx+p9lXXJ8gVbxlBxlys/AHHFZWqP9pub4GE8J/jQkMnXh7Xa7h78bIwNlzwcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=57ff3ff183804310f41ca430ceaad3a2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:41:43</sys_created_on>
+        <sys_id>80f4400683c04310f41ca430ceaad361</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:05</sys_updated_on>
+        <ui_id>e3e32b4e-456d-425e-8764-79ac6f1b439c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjiv5JjtviwYGAuw2QJu2D2lAUCJlE0uTKknZcQz/e4cSJTu+x3HR9JHDuZyZOTOm/LDwGfGvfTIIBulg0O1HQdBuB0Gv105wGMftXhIHMe74DV/gCQVNg2NO4TjFPLfnJxT2w2406CFm9GSkUIBmFDExlSyxeoTpjOP5N6f+nXq39V0yZpwoKvzrh8eGn2EFIQxV/vVi48rMM4o4jikHF/cWgffJwmmcjP6F8XY2NkB1RKJ0LRWxWIKGT58MFYRCqBRzTRv+BAuCjVTzWqIoJneCrwRjJgx49K3yk2bP4L4fWL2UQloJLe/qI3J1KsXJ2FboLjNMilJSAi0vJc8n4lOZgK0wTXHOTVVhkOQa/NHMYrYgHKL0y1jOPlcBh0wU6blLLhPM6xM2RrE4N1TbXlBOJ+AITXCWMTFCmZJTVhgDlklzxOHQTLmcQVDNRqKJEwu8CSXCzSHIbwrxN6yYzeI/cAPGAIhx6DYqi65lroqqTFHCc11cKCx06ctfFrVCP3OLssza5YfKEoGCThTLzD9gMKUulWWjInj3IEUGK0okUhBmY+o1luu5Roz8yMGYLBY6j226Tcfy5XKb58cNziP/x3V0p2a203hXum4MXsjcGIQXG4NOEPyhQTAqf39zcIzZZcJH6B2SgyQgq35rqQwqK7fG720Cn83QIaOcvFjPJ4CrjO8s2bx4vg+vI2hqY2zs6dZfv6ffJT0BEEFlvZngTBQ/kwD0MrztHqRGHG7woGj/2la2MqyTbfZiz0jv+fwtO3YvlFNBVoZfAJF3X6LcAbzar5V7R932xajbbr2OukCch0WNvq7ajgJXryHbukr/2erjTX1g15pBuHysqf/xvJjha2O2bMyN2Wy/ajjXmVXe3Owh2IXfWnuGrfE7p3sMpi4eKocVzRgZUbOKXmkRaWaY/7/r3rGrnqEivTe/28KDT/t47d3GUjSBPrEMHpOKJkAFjbCiKJW5IMg9I1e0sX1LmdLGKW/vkM/U5Ep4EkbOM2PqFdperX2JzXJCdpXhbepV6TkM2oP0vCI9r07vdcXYs486F3zrvWUfDTHjRenhcyBb6x1VSqo9O+lI1w60/8SFdSKo8KKg3r7RdvF952Y7gvWv+LZ869ZJKI47LdyL2mEYBGFAoqAfRWG/F6c9HHXS1aAhpEUCaxE8p0AMcI8qIlRdDbZXS7kbz/4DBHbuh6FzcSreyvhGCvtV2oqMZwFDn70K8PGU3L6IpeQUixU9u39sYbyX/0hydr9Zm1L0766m/a4f85x9FexnTm8tKfo0aPVDklz1ozC66qSkdzUguHuFB3E3ahOadNLzf58ffwE7tBnKOhQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=80f4400683c04310f41ca430ceaad361"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Upload File to Bot">37bbb1a483080710f41ca430ceaad3f1</action_type>
+        <action_type_parent display_value="Upload File to Bot">e763308f83d73610f41ca430ceaad3d2</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>00ff0ec0-5f59-4e0c-bdbe-f72400733285</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 19:05:35</sys_created_on>
+        <sys_id>fd6ac08683044310f41ca430ceaad33b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:05</sys_updated_on>
+        <ui_id>ccab9888-029d-4a85-a3ac-bdd80a7afe80</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VSwWrcMBD9laCzbeR4XTt7C5RAoW2gaXMJwYyl0Vogy44kb7Jd9t87sr3bkkMp1De9mTfz3hs/HZmWbMva+OWwqQte8yrnapML2BRcIIAsVMUSZqFH6oQQQHQ92tD4g2+InbA9mCnWjkfOleIoeFqq8ibdIBdpK1tMVXW94bwqiuu6zHTAPlvIpxPRpfajgcPj/00RnTbSoWXbp+eEjeBIb0DHtsd3pXAYsTHQoqFlD8FpuyP6v8ZwJt5ecrgiEVdzDn+JKC6lkj+vG5yM2vKE4VtAK5HWKzAeE9aDlRAGd7ggDkHeW/Mb6LQNNI3F5jevf9LomnMeOxWSUYFL9fJs1owXWHSDFng/Bj3YBQnQmpUjBjP19utiJV4HFUwmnK9DyORpHo5RdZSxalIP3fD67bzwTtvZ4Fo0gwBzeVFATrdTQB+vM+nvFM7n9wdBg3OEPYwjIc3ohr2eZ5LEPtsZemTKDK+kxeudzUBEPxllB9kd4R9n+BGcjua+0BgiJ+u6P28x6R9Wv0z4Kf4C/KYusSwwlXmZ07+nyhTK6kNaYVFVqqpyhQU7zdE2L1M0tYS0xtEsiVKDF06P4ZZE7XF1fnr+BdFuJr5wAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fd6ac08683044310f41ca430ceaad33b"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d7afbbb183804310f41ca430ceaad30c^sys_idNOT IN1b9acc8683044310f41ca430ceaad3a2"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>00ff0ec0-5f59-4e0c-bdbe-f72400733285</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Generic Send and Receive Bot(Global)">f529773d83004310f41ca430ceaad3d9</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1TXWvbMBT9K0XPsZEtO3byNhiBwbaOdetLKUaWrhOBLLuWnNYL+e+7iu1QwlpK2cMe9qhzv849V+fuQJQka8KieJVlTOaM0oRFtEoiwRNGBXAumRRkQQyvATPbrqlbh+89170HDgfbl5VuHsMxdDxiUCrbaj7cvpYjdkrLDgxZ390vSMs7HOCgI+vDRcgNLRSal6Cx1Y3rlNli+Vt5z4XfZuKXi/j2+LZz46aTnkW0IPDkwEjAQRXXFhak5kZy13QDWbuuR6ADLq+NHs4ZO2UcNiM+98mqX9g5p5T6zApwIwFj9PwsJqlGWOwaJeC6daoxI+J4qaca0ei+Nl9H+l5kqHiv3SwyIr3FftB60p7GxKm62TWP3+eBG2VO+01B3Qiuzy/uUIWyd2D9GXr140KbEfl8eQvQUOPEouZti0iB2u7VaQqSrsOtxkfo74/srNqakAu/YYhi8nCD+McTfMs75df9gm2w2I/7adRDD5/8rSFKM4r3DVKWx0EiSgjKJUuC5SqNoyTP0iWLyPEkbfHQ+6VGkSY5ilFRTLCiU637gBT2MG1+XExGyORrHwqeGUGZvb9VYQdbYOlzQ1BaVRQEDdIqXQUJUBGUEulWWZxQmjEW52moHNThWPxny7yry98w1Rs0mAs3SsMVjr86KfCSMi84LP7vsH/LYRziKKIRBHFWosNS/HZlFtMgWUWrnMdlKvD473XY/W/fCw/VbAYAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 19:06:31</sys_created_on>
+        <sys_id>1b9acc8683044310f41ca430ceaad3a2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:05</sys_updated_on>
+        <ui_id>c467f656-34a7-4e2a-8440-41d6916c0cc9</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d7afbbb183804310f41ca430ceaad30c^sys_idNOT IN4e59c88283044310f41ca430ceaad3f1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a7ba84c683044310f41ca430ceaad3ad</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 19:00:58</sys_created_on>
+        <sys_id>4e59c88283044310f41ca430ceaad3f1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:05</sys_updated_on>
+        <ui_id>00ff0ec0-5f59-4e0c-bdbe-f72400733285</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTwW7bMAz9F50Tw449L86twFCgh61AV/QyFIYs0YkwWdIkOaln+N9Hxo479DRgJ4uP5ON7ojwy20fXx/Bs70JQR8MOP143TBnC8DwyJdmBZZVsqyytRL4r812a7vZF1pR5k+1kzkGWbMMM7wArVYQuYHjmuqd4HPeyyMus2W8rmcptUWTVtsrzZivTz1Dkn7J925SJ4x77I/hpwmapgtN8ePkfDnFSWnpYDK05dhg/pOLgoNa8AY2jnkBYL8nAv/q+dT4sxj/cA7Fj6Fde/JCKXbph8BbBSMBBLdcBNqzjRvJo/cAO0fcIeODy0ehhrTgpE5GOUe1bUL+RO0tTKmwBHQmYk2tYL1c5w+JklYBHF5U1MxJ5o5ceYXXfmW+zfFoCtLzX8bYERPqAfOBIM6lYJLXfT/bydBt4r8zV35LUVnC9RjxGr5o+QqA1gIYOieqOO6fMsXbentW1GbV0yVFjkLTaXnAoPc2ECxKe4BXx5B7xL1f4hXtFLr4iDTZPV/f1r57mzj4WxfVsGguC8MrFO6Q7wyJueqU3OzOF+WFIECrgwGfCHm5/BCUGXLISf0MX63+S1Hds+gN3+7F7WwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>prompt</element>
+        <help/>
+        <hint/>
+        <label>Prompt</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d7afbbb183804310f41ca430ceaad30c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:19:46</sys_created_on>
+        <sys_id>2aef3bf183804310f41ca430ceaad35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:19:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice</element>
+        <help/>
+        <hint/>
+        <label>Invoice</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d7afbbb183804310f41ca430ceaad30c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:27:38</sys_created_on>
+        <sys_id>71b1884a83804310f41ca430ceaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:27:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>model</element>
+        <help/>
+        <hint/>
+        <label>Model</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d7afbbb183804310f41ca430ceaad30c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:19:46</sys_created_on>
+        <sys_id>e6ef3fb183804310f41ca430ceaad3e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:19:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>main_invoice_process_subflow</internal_name>
+        <label_cache>[{"name":"e3e32b4e-456d-425e-8764-79ac6f1b439c.Record","label":"1 - Look Up Record➛We Invoice Record","reference":"x_1815796_itsmgr_0_we_invoice","reference_display":"We Invoice","type":"reference","base_type":"reference","usedInstances":{"8d4361b8-9d0d-4419-933b-d07e43518fb6":["source_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.invoice","label":"Input➛Invoice","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"e3e32b4e-456d-425e-8764-79ac6f1b439c":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f6f054ed-4095-4519-a898-7ea671fbafce","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"8d4361b8-9d0d-4419-933b-d07e43518fb6.parameter","label":"2 - Get Attachments on Record➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment","type":"records","base_type":"records","usedInstances":{"39c15a05-2164-4ef2-9385-345921ad7130":["invoice_sys_id"],"00ff0ec0-5f59-4e0c-bdbe-f72400733285":["items"]},"attributes":{"uiType":"records","uiTypeLabel":"Records","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.prompt","label":"Input➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5c8b64ef-7d20-4882-9303-267dc2f66b2f":["prompt"],"39c15a05-2164-4ef2-9385-345921ad7130":["prompt"],"c467f656-34a7-4e2a-8440-41d6916c0cc9":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f4d2eec9-5549-4f3c-842d-76aa0894aa58","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"00ff0ec0-5f59-4e0c-bdbe-f72400733285.item.sys_id","label":"3 - For Each➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","usedInstances":{"4f029814-9ba9-46e3-a728-3ca7e52d6924":["attachment_sys_id"],"ccab9888-029d-4a85-a3ac-bdd80a7afe80":["attachment_sys_id"],"c467f656-34a7-4e2a-8440-41d6916c0cc9":["invoice_sys_id"]}}]</label_cache>
+        <master>true</master>
+        <name>Main Invoice Process Subflow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cbc18c4a83804310f41ca430ceaad3de</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:06</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=cbc18c4a83804310f41ca430ceaad3de^sys_idNOT IN0bc18c4a83804310f41ca430ceaad3df"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>cbc18c4a83804310f41ca430ceaad3de</id>
+        <name>Main Invoice Process Subflow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>0bc18c4a83804310f41ca430ceaad3df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:28:00</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0bc18c4a83804310f41ca430ceaad3df"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=cbc18c4a83804310f41ca430ceaad3de^sys_idNOT IN07c18c4a83804310f41ca430ceaad3e1,53c18c4a83804310f41ca430ceaad3f1,53c1cc4a83804310f41ca430ceaad308"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f4d2eec9-5549-4f3c-842d-76aa0894aa58</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>prompt</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Prompt</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</model>
+        <model_id>cbc18c4a83804310f41ca430ceaad3de</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_cbc18c4a83804310f41ca430ceaad3de</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>07c18c4a83804310f41ca430ceaad3e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:28:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=07c18c4a83804310f41ca430ceaad3e1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=13a0c706-b2d6-461b-bd66-855f061900be</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>model</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Model</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</model>
+        <model_id>cbc18c4a83804310f41ca430ceaad3de</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_cbc18c4a83804310f41ca430ceaad3de</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>53c18c4a83804310f41ca430ceaad3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:28:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=53c18c4a83804310f41ca430ceaad3f1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f6f054ed-4095-4519-a898-7ea671fbafce</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Invoice</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</model>
+        <model_id>cbc18c4a83804310f41ca430ceaad3de</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_cbc18c4a83804310f41ca430ceaad3de</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>53c1cc4a83804310f41ca430ceaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:28:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=53c1cc4a83804310f41ca430ceaad308"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=cbc18c4a83804310f41ca430ceaad3de^sys_idNOT IN08a5088683c04310f41ca430ceaad340,97c1cc4a83804310f41ca430ceaad31a,f7bac4c683044310f41ca430ceaad373"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:44:43</sys_created_on>
+        <sys_id>08a5088683c04310f41ca430ceaad340</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:44:43</sys_updated_on>
+        <ui_id>e3e32b4e-456d-425e-8764-79ac6f1b439c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6Bvp1ZIlfa20ra397C3spzYAeuMk7UdaIv433ccOyEHFIiWSq320eOx/c3M942dfFv7jPjXPpkEk3QyGY6jIOj3g2A06ic4jOP+KImDGA/8ji/wgoKnxjGnMFxiXpjxEwrH4TCajBDTajGTKEAriphYZiwxfoSpnOPnr879H+rd1XPJnHEiqfCvv33v+DmWcISm0r9e70ydi5HjmHJwfXQgdzDr57weonLO2j41l3mf7UQmiYESdHz6pKkgFDCkmCva8RdYEKwz+VxbJMXkXvCtYc6Ehh194/yk2AucOw6MX0ohqoTauXqIXJqsOb3FGj9oWSS6kM41mZukKZsPQlNccH3TtFmH+1yzTNglNmy7OuPFQny26fDrDaqqgKVQAILmJlCD3IWRPsyz1ZcK5ZSJMidukmcJ5vUIay1ZXGiDZ+1TThewEVrgPGdihnKZLVm5GLAsujMOg27KsxUcqthMdHFigHchr7g7Bfttaf6KJTNR/AXbwGIAxDgwBNkSqqyQZSqXKOGFKickFsru5W86vnpWNxwrtY0cUo5+FAa3zYOLGNmkmSWJZLn+E7ZYUhfcplPJZHiUgpMt5ZJMEGZQqIZWAA1i5N8CFpP1WhWxSUDXaWWz2VfL6QUtJXQafyWhm2YAh4JyYtqzfTq0gRNTeDExDYLgI8kJDn9/amqvD5uCEyIJyVGSkS2fVCY1srlsqGRfBq15fgaEiuf3hple/PwaKkfzlFFODt0ZUzOxc2f0fs87412SHAARZKvHBGeifAAA0Ldi//Ao9eJwh2clvRo3hLFhlexrAHs6815aK+EMOJUSHuBs79HiOQCx6vdz93j7X6+vjE4A/YsJoN+7jADWdZh1Ig/kvHrzmWpW/i/GH+/6AwUbC8LNIYG1OjNse2Zvsy/gfisFN8lmZ25f4dyFH4evKLLzli1gDkvdecjqF60YmVG9Pb3yIpleYf7foXnHOFQVqgzvDR6a4dFvnbjx0GQpWkDlWA7vYUkTIIdCWFKUZoUgyL2Et0QylUyZVNo57zeaLxT0I7wMhOnpOfVKb6/2bnkRn46jSuVd6lWBuNOUB4F4ZSBeHUi7sNs0rcEFH6eXblpTzHhZDfjIyRvlpFJm8pXGdaKQRxhxZlc7E1R4UVC/3vYOSeBg+zuB9UN8MV++NSUUx4MeHkX9MAyCMCBRMI6icDyK0xGOBulWowgpkUA3hZ1ToApsjypqVHUO9vuPbaltG80ZqCoK3mbCfFH3Iu0ZWFBfr4J1GrhrKHGWcYrFTkd5hHvij6nD7/g6fHdd5UP8PyrY426mrelgrt/q3VCwvwX7UdA7Q7ExDXrjkCRX4yiMrgYpGV1NCB5e4Uk8jPqEJoP0kk+B7z8B7q9r5JwVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=08a5088683c04310f41ca430ceaad340"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Attachments on Record">082e70db0f4273003788001ea8767e02</action_type>
+        <action_type_parent display_value="Get Attachments on Record">31de959973c93300a3942ea3c4f6a774</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>082e70db0f4273003788001ea8767e02</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>97c1cc4a83804310f41ca430ceaad31a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:44:43</sys_updated_on>
+        <ui_id>8d4361b8-9d0d-4419-933b-d07e43518fb6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VV207bQBD9ldU+AQ3GuYADPCHStJVakEjFC0HWej12tlqv3b0E0ij/3llfwq0g+tbmhezZmdkzM+eEmzUVKT2h4XgAUZgmYTYaRMMwHEbjcRj2gY2jowjCIe1RxQrAyExIiOvvPbpk0nnsi1qWgnskFaaSbHX94oIvhEw1KHpyc9ujFdNYwYKmJ+tnV++lI1kCEkOnyIdcNHz+QNGuKg8Zq4XK2/PXNnXWgaVOPZV+j8K9BZUCcsiYNNCjBVMps6VebRENLL1U8gFYCGWxGvXB90b8wveQbOgjM8C+ODS322PcTqmBswmzDKk4bp1uQ/nCj800E0khY07a88dYE3BZWVGqJsWyRHbZpXSFumiGQbcFuqUg4gySgMq36rm3jWSzRXl31bGcClVPpb2UJWdye2IWZ5c46/msqRPfn425QV4MGiQU+GJcsKpCJK50uRT1K0i6CHKJhyCT5R2yMyJXAeO+wwBXwIIp4pMavmZa+Ha/YRlM3vSoWZlzyYx5aBqnHf90nnIzgrbZuJmXT+FaVPYMH1hC29em19qBj97U3/hBa6Z0GjeqgaOIHllivYYhDAfJCPZHh0fp/mhwCPuYPdqPjhk/yvrJaHjMg6s6b7N5aZ2/9sw7OHeemdWkyVVH+pVeWu+kJXf11kT6zECT9oZ8mTy4aPC2i1Do7zTRcPDUQrjjGHXH+MK/+Yqhzh4H/JfWymbANF9MBcj02Y/ZK657uqCn1tvu+B+3Xgf6xp7q0ANvxdODvbna2zvjuEFDPNODs5o68dSJM9gtsQsgWRrXSJn8AG4DMqsLkMIZSzSgQhRhpPZvQHzFS69nolyR4B9hSJllBixJVuRDnwhFPmpdavIZpS39EzNoBlaTWTIh/ZhIWevIkFahxFVIrNJI1efMaTCnhGXo6o6eT4d7VlQSTpCNJmZRaovD52Tu0NVpFxigFvIcdMCdRlXZoA7026v7wldPfa22s20VDx7Mla+c666kgjvyySugkcuOhwfRfdwf9w+j46NYWFPkOg7jO4hF8z+9Cdk9xVGJjOzkOsjB7ghVOWuCNmZ3F28JfloSuT6lm83m9jfrtlzTdggAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=97c1cc4a83804310f41ca430ceaad31a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Upload File to Bot">37bbb1a483080710f41ca430ceaad3f1</action_type>
+        <action_type_parent display_value="Upload File to Bot">e763308f83d73610f41ca430ceaad3d2</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>37bbb1a483080710f41ca430ceaad3f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>00ff0ec0-5f59-4e0c-bdbe-f72400733285</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 19:07:06</sys_created_on>
+        <sys_id>f7bac4c683044310f41ca430ceaad373</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:06</sys_updated_on>
+        <ui_id>ccab9888-029d-4a85-a3ac-bdd80a7afe80</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VSXWvbMBT9K0XPtpHreE7zVloKg22FdetLKeZauooFsuxKctos5L/vKnbS0sEoVG/33K9zztXDjmnJVqyJL4fFsuBLXuVcLXIBi4ILBJCFqljCLHRIlRACiLZDG2q/9TV1J2wDZoy53Y5zpTgKnpaqvEgXyEXayAZTVZ0vOK+K4nxZZjpgl03N+z21S+0HA9v7z00RrTbSoWWrh8eEDeCIb0DHVrt3qY8KNtCgodLLk+IzWnd2UPwfM8J2iCkfnLbrOf42j7o7gr2TkVqeMHwJaCUSJwXGY8I6sBJC77YnxCHIW2tegVbbQNNYLH7x+g/tW3LOY6VC0ilwyp7CerZ4gtU1BCAqowijm0tF22uBfnJIooLRhKu32FRwOwTd26klQGOO3b0ZO/tjMoWdBhwvSsjoiQQOUWrkPgtRd23//PPI8kbbgytz0vQCzCkiq51uxhD57Niof72zeUL+MRoNHs7TwTAQUg+u3+jDFiLdZWtDQaZM/0zsvF7bDERUmNEJILsh/PoA34PTUe53GkPNcd1vq59G/Bo/E79YllgWmMq8zOm/qjKFsvqSVlhUlaqqXGHB9gmjP3JlwPtXo+hC9dMYZU62zQbVk8exRTg9hEsitcHZi/3jXxqcAb+2AwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f7bac4c683044310f41ca430ceaad373"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=cbc18c4a83804310f41ca430ceaad3de^sys_idNOT INf7bac4c683044310f41ca430ceaad377"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>00ff0ec0-5f59-4e0c-bdbe-f72400733285</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Generic Send and Receive Bot(Global)">f529773d83004310f41ca430ceaad3d9</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1TTW/bMAz9K4XOsSF/xUluQ4sAA7Z1WLdeisKgJToRIMuuLafNgvz3UbGdBtlWtMNOw458IsXHR767HVOSLVgUhPM0jeQs4jyOAl7EgYA44gIBZCQFmzADJVJm3VRlbSnegO4csNu1XV7o6tHvn/Z7epSqrTVsb1/KEWulZYOGLe7uJ6yGhhpYbNhid/b0WoYactSU+nmkeE7ZbmsXt7ZRZjXEH4aimxGsGulIBBOGTxaNROpegG5xwkowEmzVbNnCNh0BDYK8Nnp7zFgrY+kz5nKfWvWd2s045y6zQBpIYP96DLNBqR4ursACMemE7ZohVawrJbDtpZBYQKft5SnWJ1zXVlWmL7GQ67G60l1pPvVCsOMH42II6VoigbWb1HEfBilu1tXjl5HlUpmDKMOjrgToYwSWpMs76/jsWKe+nqncIz/pjBpL6piVUNeEZLSljTp0IdKlv9IU+O5miF2rVsYH4Sb0aQPgLwm/OsC30Cg37kf6hopdu29GPXT43l0NBknK6VK8JJqFXixy9PJpFHvTeRIG8SxNplHA9hPWbttLDW37LBRtKHvo3Ji9bINAWa+xKxGNqu07IrXBQYv9ZLBTKl86VjyxkzIbt72MCGRUemorzouCo+BeUiRzL0YuvFzSAEUaxpynURTOEl9ZLP2++NfG+6Nf3mbNV0w7WnOpNF5Qo4vDrL/T4C0+Df/79B/wKWAYBDxAL0xz8mlCp5qnIffieTCfQZgngs7o7/n0/geJ1VJQ+AYAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 19:07:06</sys_created_on>
+        <sys_id>f7bac4c683044310f41ca430ceaad377</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:06</sys_updated_on>
+        <ui_id>c467f656-34a7-4e2a-8440-41d6916c0cc9</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=cbc18c4a83804310f41ca430ceaad3de^sys_idNOT INf3bac4c683044310f41ca430ceaad375"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a7ba84c683044310f41ca430ceaad3ad</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Main Invoice Process Subflow">cbc18c4a83804310f41ca430ceaad3de</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 19:07:06</sys_created_on>
+        <sys_id>f3bac4c683044310f41ca430ceaad375</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:06</sys_updated_on>
+        <ui_id>00ff0ec0-5f59-4e0c-bdbe-f72400733285</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTy27bMBD8F55tQbJU1/ItSBAgQNoASZBLERgrcmUToUiVDzuq4H/v0nokyKlAT9LO7ixnRlTPTPBt8O7ZXDkn95ptf70umNQRo/eeScG2LCtFXWZpyfPVOl+l6WpTZNU6r7KVyAHFmi2YhgZpUnpsHJVHUCHWfb8RRb7Oqs2yFKlYFkVWLss8r5Yi/Y5F/i3b1NU6acES36M9n4kspGsVdC//s4MfpBIWR0Nzj237L61/NaigQkWjd6PDL4Z918bSIjdWTMD9yHmcUXpEEat0wfDdoxZIx9egHC5YA1qAN7ZjW28DARZBPGjVzRMHqT2tY3H23ck/dGKWpnGwRjLEcWjO5W5McoDrG/DwRKu5D3Yc5QcjObohCoE1BOWvP2PDwEPrpdEDxUOlJrZRodE/hyTYvGD6cIQERyKwjUaj9NFH/XQwp8dJ5a3Ul1DGpjIc1FyB91ZWwUc9PUOFDS3aNdC2Uu93rTVHeSGTlibZKyqSWpkTHRqvcwI8Ck8oV0huCb+5wC9gZXTxg9YQ+bxgrnPXCpz78EIh7n6HqGRwNnrYDTFECrey9Vd0wBFHuefXePOH3XOmXDqS8Byxu+m/io2ObpDkn6GTsW9R/Ad2/gs/+LTXoQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>prompt</element>
+        <help/>
+        <hint/>
+        <label>Prompt</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cbc18c4a83804310f41ca430ceaad3de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>57c18c4a83804310f41ca430ceaad3ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:28:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>model</element>
+        <help/>
+        <hint/>
+        <label>Model</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cbc18c4a83804310f41ca430ceaad3de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>57c1cc4a83804310f41ca430ceaad304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:28:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice</element>
+        <help/>
+        <hint/>
+        <label>Invoice</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_cbc18c4a83804310f41ca430ceaad3de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_id>dfc1cc4a83804310f41ca430ceaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 18:28:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_cbc18c4a83804310f41ca430ceaad3de"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>d7afbbb183804310f41ca430ceaad30c</sys_id>
+        <latest_snapshot>cbc18c4a83804310f41ca430ceaad3de</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d7afbbb183804310f41ca430ceaad30c"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d7afbbb183804310f41ca430ceaad30c^sys_idNOT IN9bc1cc4a83804310f41ca430ceaad365"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@318b82a6</plan>
+        <plan_id display_value="Main Invoice Process Subflow">d7afbbb183804310f41ca430ceaad30c</plan_id>
+        <snapshot>cbc18c4a83804310f41ca430ceaad3de</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-05 18:28:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9bc1cc4a83804310f41ca430ceaad365</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-05 19:07:06</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
