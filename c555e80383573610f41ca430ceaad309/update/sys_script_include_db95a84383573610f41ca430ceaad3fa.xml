@@ -12,7 +12,7 @@
         <script><![CDATA[var AiBotHelper = Class.create();
 AiBotHelper.prototype = {
     initialize: function() {
-        this.loggingEnabled = gs.getProperty('x_1815796_itsmgr_0.ai_bot_logging_enabled', 'false');
+        this.loggingEnabled = gs.getProperty('x_1815796_itsmgr_0.ai_bot_logging_enabled', 'true');
         this.baseUrl = gs.getProperty('x_1815796_itsmgr_0.ai_bot_url', 'https://141.85.227.171:8123');
         this.apiKey = gs.getProperty('x_1815796_itsmgr_0.ai_bot_key', 'sk-1ac0a26b60fb47959072b6b1089774cd');
 
@@ -205,11 +205,22 @@ AiBotHelper.prototype = {
 
             var filesPayload = fileObjects.join(',');
 
+            // --- THE FIX: FORMAT AND ESCAPE THE PROMPT ---
+            // 1. JSON.stringify safely escapes all newlines (\n), tabs, and quotes.
+            //    Example: "Line 1 \n Line 2" becomes "\"Line 1 \\n Line 2\""
+            var safePrompt = JSON.stringify(prompt);
+            
+            // 2. Remove the leading and trailing quotes added by stringify 
+            //    so it fits perfectly into your REST message payload template.
+            safePrompt = safePrompt.substring(1, safePrompt.length - 1);
+            // ---------------------------------------------
+
             r.setStringParameterNoEscape('baseURL', this.baseUrl);
             r.setStringParameterNoEscape('apiKey', this.apiKey);
             r.setStringParameterNoEscape('model', model);
-            r.setStringParameterNoEscape('prompt', prompt);
-
+            
+            // Pass the perfectly escaped prompt
+            r.setStringParameterNoEscape('prompt', safePrompt);
             r.setStringParameterNoEscape('files', filesPayload);
 
             r.setHttpTimeout(120000);
@@ -440,13 +451,13 @@ AiBotHelper.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-02 16:53:52</sys_created_on>
         <sys_id>db95a84383573610f41ca430ceaad3fa</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name>AiBotHelper</sys_name>
         <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
         <sys_policy/>
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_update_name>sys_script_include_db95a84383573610f41ca430ceaad3fa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-12 14:53:24</sys_updated_on>
+        <sys_updated_on>2026-06-11 01:19:13</sys_updated_on>
     </sys_script_include>
 </record_update>

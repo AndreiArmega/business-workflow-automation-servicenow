@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>generic_send_and_receive</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    
+    // 1. Extract payload
+    var body = request.body.data || {};
+
+    var inputs = {};
+    inputs['model'] = body.model || null; 
+    inputs['prompt'] = body.prompt || null; 
+    inputs['attachment_sys_id'] = body.attachment_sys_id || null; 
+
+    try {
+        // 2. Execute Subflow
+        var result = sn_fd.FlowAPI.getRunner()
+            .subflow('x_1815796_itsmgr_0.generic_send_receive')
+            .inForeground()
+            .withInputs(inputs)
+            .run();
+
+        var outputs = result.getOutputs();
+        
+        var file_contents = outputs['file_contents']; 
+        var file_id = outputs['file_id']; 
+        var bot_answer = outputs['bot_answer']; 
+
+        // 3. Return Success Response
+        response.setStatus(200);
+        response.setBody({
+            "status": "success",
+            "bot_answer": bot_answer,
+            "file_id": file_id,
+            "file_contents": file_contents
+        });
+
+    } catch (ex) {
+        // 4. Handle and Log Hard Failures
+        var errorMessage = ex.message || ex.toString();
+        gs.error("Error in Scripted REST API (Generic Subflow): " + errorMessage);
+        
+        response.setStatus(500);
+        response.setBody({
+            "status": "failure",
+            "message": errorMessage
+        });
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1815796_itsmgr_0/langflow_api/generic_send_and_receive</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/generic_send_and_receive</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-08 14:57:20</sys_created_on>
+        <sys_id>e41734ea83114f54f41ca430ceaad3b1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>generic_send_and_receive</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_ws_operation_e41734ea83114f54f41ca430ceaad3b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 16:34:02</sys_updated_on>
+        <web_service_definition display_value="Langflow API">49fcdc5483d18fd0f41ca430ceaad3fe</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

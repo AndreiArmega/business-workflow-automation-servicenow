@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>call_bot_with_rag</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+    var body = request.body.data;
+
+    var inputs = {};
+    inputs['prompt'] = body.prompt;
+    inputs['model'] = body.model;
+    inputs['file_ids'] = body.file_ids;
+
+    try {
+        var result = sn_fd.FlowAPI.getRunner()
+            .action('x_1815796_itsmgr_0.call_bot_with_rag')
+            .inForeground()
+            .withInputs(inputs)
+            .run();
+
+        var outputs = result.getOutputs();
+        gs.info("Action Outputs Debug: " + JSON.stringify(outputs));
+        var success = outputs.success;
+        var answer = outputs.answer;
+        var error_message = outputs.error_message;
+
+        gs.info("Action Outputs Debug -> Success: " + success + " | Answer: " + answer + " | Error: " + error_message);
+
+        if (success == 'true' || success === true) {
+            response.setBody({
+                "status": "success",
+                "ai_response": answer
+            });
+        } else {
+            response.setStatus(500);
+            response.setBody({
+                "status": "failure",
+                "message": error_message
+            });
+        }
+    } catch (ex) {
+        response.setStatus(500);
+        response.setBody({
+            "status": "failure",
+            "message": ex.message
+        });
+    }
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1815796_itsmgr_0/langflow_api/call_bot_with_rag</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/call_bot_with_rag</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 13:25:44</sys_created_on>
+        <sys_id>164ddc9483d18fd0f41ca430ceaad3e3</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>call_bot_with_rag</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_ws_operation_164ddc9483d18fd0f41ca430ceaad3e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-08 14:56:09</sys_updated_on>
+        <web_service_definition display_value="Langflow API">49fcdc5483d18fd0f41ca430ceaad3fe</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

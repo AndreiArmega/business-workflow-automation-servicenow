@@ -2,7 +2,7 @@
     <element db_object_id="c510bfec83e40b10f41ca430ceaad3a4" label="We Invoice Lines" max_length="40" name="x_1815796_itsmgr_0_we_invoice_lines" type="collection">
         <element label="Invoice" max_length="32" name="invoice" reference="x_1815796_itsmgr_0_invoices" type="reference"/>
         <element label="Quantity" max_length="100" name="quantity" type="string"/>
-        <element label="User Who Worked" max_length="32" name="user_who_worked" reference="sys_user" type="reference"/>
+        <element label="Consulting User" max_length="32" name="user_who_worked" reference="sys_user" type="reference"/>
         <element label="Total" max_length="100" name="total" type="string"/>
         <element label="Performance Period" max_length="40" name="performance_period" type="string"/>
         <element label="Price per unit" max_length="40" name="price_per_unit" type="string"/>

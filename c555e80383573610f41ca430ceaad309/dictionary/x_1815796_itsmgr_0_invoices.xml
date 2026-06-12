@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="e72edda083bccf10f41ca430ceaad3ef" label="Invoices" max_length="40" name="x_1815796_itsmgr_0_invoices" type="collection">
         <element label="Short Description" max_length="1000" name="u_short_description" type="string"/>
+        <element label="Due Date" max_length="40" name="due_date" type="string"/>
         <element label="Invoice Date" max_length="100" name="u_invoice_date" type="string"/>
+        <element label="VAT" max_length="40" name="vat" type="integer"/>
         <element label="Number" max_length="40" name="u_number" type="string"/>
         <element label="Amount" max_length="100" name="u_amount" type="string"/>
         <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="Project Name" max_length="100" name="project_name" type="string"/>
         <element label="Tax Amount" max_length="100" name="u_tax_amount" type="string"/>
         <index name="index">
             <element name="company"/>

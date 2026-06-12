@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition">
+    <sys_ws_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_uri>/api/x_1815796_itsmgr_0/langflow_api</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>No active default version</default_version>
+        <doc_link/>
+        <enforce_acl>9bdf2c9137031200612747efbe41f1fd</enforce_acl>
+        <is_versioned>false</is_versioned>
+        <name>Langflow API</name>
+        <namespace>x_1815796_itsmgr_0</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>langflow_api</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 13:16:19</sys_created_on>
+        <sys_id>49fcdc5483d18fd0f41ca430ceaad3fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Langflow API</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_ws_definition_49fcdc5483d18fd0f41ca430ceaad3fe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 13:16:19</sys_updated_on>
+    </sys_ws_definition>
+</record_update>
