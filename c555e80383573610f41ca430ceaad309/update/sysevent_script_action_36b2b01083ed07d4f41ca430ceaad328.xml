@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_1815796_itsmgr_0.langflow_processing</event_name>
+        <name>Langflow Call</name>
+        <order>100</order>
+        <script><![CDATA[try {
+
+	var eventData = JSON.parse(event.parm2);
+    var tipProcesare = eventData.type;              
+    var instr = eventData.instructions;
+	var promptAi = "Process the invoice with the sys_id " + current.getUniqueValue() + ". ";
+    promptAi += "The required processing type is: " + tipProcesare + ". ";
+    
+    if (instr && instr.trim() !== '') {
+        promptAi += "Please follow these additional instructions from the user: " + instr;
+    }
+
+    var apiKey = 'sk-lRXpy4XnxMsJE04NfAgPNNDMtZlRIiJZp2SxdC9s3SM'; 
+    var endpoint = 'https://21bc-2a02-2f0f-b109-dd00-c972-f432-30e0-f1b5.ngrok-free.app/api/v1/run/987ac07e-4831-4353-88e6-380efdbaa5f1';
+
+    var payload = {
+        "output_type": "chat",
+        "input_type": "chat",
+        "input_value": promptAi,
+        "session_id": gs.generateGUID() 
+    };
+
+	current.work_notes = "[LangFlow AI] Cererea a fost trimisă către agent. Se rulează modul: " + tipProcesare + "...";
+    current.update();
+    var request = new sn_ws.RESTMessageV2();
+    request.setEndpoint(endpoint);
+    request.setHttpMethod('POST');
+    request.setRequestHeader("Content-Type", "application/json");
+    request.setRequestHeader("x-api-key", apiKey);
+    request.setRequestBody(JSON.stringify(payload));
+	request.setHttpTimeout(540000);
+    var response = request.execute();
+    var responseBody = response.getBody();
+    var httpStatus = response.getStatusCode();
+
+   
+    if (httpStatus == 200) {
+        var parsedResponse = JSON.parse(responseBody);
+        var extractedMessage = "";
+        
+        try {
+
+            var agentSteps = parsedResponse.outputs[0].outputs;
+            
+            for (var i = 0; i < agentSteps.length; i++) {
+                if (agentSteps[i].results && agentSteps[i].results.message && agentSteps[i].results.message.data) {
+                    var textOutput = agentSteps[i].results.message.data.text;
+                    
+                    if (textOutput) {
+                        extractedMessage += textOutput + "\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n";
+                    }
+                }
+            }            
+            extractedMessage = extractedMessage.trim().replace(/━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$/, "").trim();
+            
+        } catch (e) {
+            extractedMessage = " Eroare la parsarea textului din LangFlow. Mesaj brut:\n" + responseBody;
+        }
+
+        current.work_notes = "Răspuns Langflow primit cu succes:\n" + extractedMessage;
+    } else {
+        current.work_notes = "Eroare de la Langflow. Cod HTTP: " + httpStatus + "\nDetalii: " + responseBody;
+    }
+    
+    current.update();
+    
+} catch (ex) {
+    current.work_notes = "A apărut o eroare de sistem la apelarea Langflow: " + ex.message;
+    current.update();
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-14 01:07:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36b2b01083ed07d4f41ca430ceaad328</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Langflow Call</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sysevent_script_action_36b2b01083ed07d4f41ca430ceaad328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-20 16:53:39</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

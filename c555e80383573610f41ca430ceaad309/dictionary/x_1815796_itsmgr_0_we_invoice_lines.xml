@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="c510bfec83e40b10f41ca430ceaad3a4" label="We Invoice Lines" max_length="40" name="x_1815796_itsmgr_0_we_invoice_lines" type="collection">
+    <element db_object_id="c510bfec83e40b10f41ca430ceaad3a4" label="Invoice Lines" max_length="40" name="x_1815796_itsmgr_0_we_invoice_lines" type="collection">
         <element label="Invoice" max_length="32" name="invoice" reference="x_1815796_itsmgr_0_invoices" type="reference"/>
+        <element label="Service Provided" max_length="200" name="service_provided" type="string"/>
+        <element label="Item Provided" max_length="200" name="item_provided" type="string"/>
         <element label="Quantity" max_length="100" name="quantity" type="string"/>
         <element label="Consulting User" max_length="32" name="user_who_worked" reference="sys_user" type="reference"/>
         <element label="Total" max_length="100" name="total" type="string"/>
         <element label="Performance Period" max_length="40" name="performance_period" type="string"/>
         <element label="Price per unit" max_length="40" name="price_per_unit" type="string"/>
         <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Associated Resources" max_length="1000" name="associated_resources" type="string"/>
         <index name="index">
             <element name="invoice"/>
         </index>

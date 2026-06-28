@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Referenced resources" section_id="fe3e1e0a83e18f18f41ca430ceaad3e3" sys_domain="global" table="x_1815796_itsmgr_0_we_invoice_lines" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_who_worked</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>1def9e8e83e18f18f41ca430ceaad365</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_who_worked.employee_number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>d5ef9e8e83e18f18f41ca430ceaad366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_who_worked.company</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>91ef9e8e83e18f18f41ca430ceaad367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_who_worked.state</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>5def9e8e83e18f18f41ca430ceaad367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_who_worked.u_price_per_unit</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>19ef9e8e83e18f18f41ca430ceaad368</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>d1ef9e8e83e18f18f41ca430ceaad369</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_provided</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>9def9e8e83e18f18f41ca430ceaad369</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>item_provided</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>59ef9e8e83e18f18f41ca430ceaad36a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Referenced resources" display_value="Referenced resources" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">fe3e1e0a83e18f18f41ca430ceaad3e3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Referenced resources</caption>
+            <header>false</header>
+            <name>x_1815796_itsmgr_0_we_invoice_lines</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:25:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fe3e1e0a83e18f18f41ca430ceaad3e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1815796_itsmgr_0_we_invoice_lines</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+            <sys_update_name>sys_ui_section_fe3e1e0a83e18f18f41ca430ceaad3e3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:25:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

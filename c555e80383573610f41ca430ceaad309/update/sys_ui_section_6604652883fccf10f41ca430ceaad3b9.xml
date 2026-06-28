@@ -4,13 +4,13 @@
             <element>u_number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-08 16:33:26</sys_created_on>
-            <sys_id>a204652883fccf10f41ca430ceaad3c5</sys_id>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>c844628e83258f18f41ca430ceaad325</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-08 16:33:26</sys_updated_on>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,111 +18,125 @@
             <element>u_invoice_date</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-08 16:33:26</sys_created_on>
-            <sys_id>6204652883fccf10f41ca430ceaad3c7</sys_id>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>8444628e83258f18f41ca430ceaad326</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-08 16:33:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_tax_amount</element>
-            <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-08 16:33:26</sys_created_on>
-            <sys_id>2e04652883fccf10f41ca430ceaad3c7</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-08 16:33:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_amount</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-08 16:33:26</sys_created_on>
-            <sys_id>e604652883fccf10f41ca430ceaad3c8</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-08 16:33:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>company</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-08 16:33:26</sys_created_on>
-            <sys_id>a204652883fccf10f41ca430ceaad3c9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-08 16:33:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>u_short_description</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-05-08 16:33:26</sys_created_on>
-            <sys_id>6e04652883fccf10f41ca430ceaad3c9</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-05-08 16:33:26</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>project_name</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-06-10 21:28:57</sys_created_on>
-            <sys_id>6d24a0df8351c794f41ca430ceaad382</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-06-10 21:28:57</sys_updated_on>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>due_date</element>
-            <position>7</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-06-10 21:37:13</sys_created_on>
-            <sys_id>ea0624978391c794f41ca430ceaad302</sys_id>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>4044628e83258f18f41ca430ceaad327</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-06-10 21:37:13</sys_updated_on>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>vat</element>
-            <position>8</position>
+            <element>project_name</element>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-06-10 21:37:49</sys_created_on>
-            <sys_id>5326e8978391c794f41ca430ceaad397</sys_id>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>0c44628e83258f18f41ca430ceaad327</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-06-10 21:37:49</sys_updated_on>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>c444628e83258f18f41ca430ceaad328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vat</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>8044628e83258f18f41ca430ceaad329</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_tax_amount</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>4c44628e83258f18f41ca430ceaad329</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_amount</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:51:56</sys_created_on>
+            <sys_id>0844628e83258f18f41ca430ceaad32a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:51:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>billing_company</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:54:09</sys_created_on>
+            <sys_id>64c4eece83258f18f41ca430ceaad3ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:54:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>billing_user</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:55:04</sys_created_on>
+            <sys_id>75f46e0283658f18f41ca430ceaad3cf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1815796_itsmgr_0_invoices" sys_domain="global" view="Default view">6604652883fccf10f41ca430ceaad3b9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:55:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

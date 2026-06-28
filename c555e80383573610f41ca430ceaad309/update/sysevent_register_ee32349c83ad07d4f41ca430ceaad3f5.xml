@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_1815796_itsmgr_0.langflow_processing</event_name>
+        <fired_by>UI Action</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix>langflow_processing</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-14 01:05:24</sys_created_on>
+        <sys_id>ee32349c83ad07d4f41ca430ceaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1815796_itsmgr_0.langflow_processing</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sysevent_register_ee32349c83ad07d4f41ca430ceaad3f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-14 01:05:24</sys_updated_on>
+        <table>x_1815796_itsmgr_0_invoices</table>
+    </sysevent_register>
+</record_update>

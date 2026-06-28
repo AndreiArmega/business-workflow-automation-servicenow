@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Line Details" section_id="65fd5ec683e18f18f41ca430ceaad3c8" sys_domain="global" table="x_1815796_itsmgr_0_we_invoice_lines" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>01ef9e8e83e18f18f41ca430ceaad353</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Line Details" display_value="Line Details" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">65fd5ec683e18f18f41ca430ceaad3c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>performance_period</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>c9ef9e8e83e18f18f41ca430ceaad353</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Line Details" display_value="Line Details" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">65fd5ec683e18f18f41ca430ceaad3c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quantity</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>85ef9e8e83e18f18f41ca430ceaad354</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Line Details" display_value="Line Details" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">65fd5ec683e18f18f41ca430ceaad3c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>price_per_unit</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>41ef9e8e83e18f18f41ca430ceaad355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Line Details" display_value="Line Details" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">65fd5ec683e18f18f41ca430ceaad3c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:32:54</sys_created_on>
+            <sys_id>0def9e8e83e18f18f41ca430ceaad355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Line Details" display_value="Line Details" name="x_1815796_itsmgr_0_we_invoice_lines" sys_domain="global" view="Default view">65fd5ec683e18f18f41ca430ceaad3c8</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:32:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Line Details</caption>
+            <header>false</header>
+            <name>x_1815796_itsmgr_0_we_invoice_lines</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-19 19:24:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65fd5ec683e18f18f41ca430ceaad3c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1815796_itsmgr_0_we_invoice_lines</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+            <sys_update_name>sys_ui_section_65fd5ec683e18f18f41ca430ceaad3c8</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-19 19:24:27</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

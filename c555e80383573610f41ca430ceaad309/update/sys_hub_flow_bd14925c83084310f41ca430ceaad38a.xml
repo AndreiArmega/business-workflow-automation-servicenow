@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation>Send the core company table to the AI and see what it thinks is the clsoest company.</annotation>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2236729000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=6646780000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>get_closest_company_from_ai</internal_name>
-        <label_cache>[{"name":"subflow.company_name","label":"Input➛Company Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"04070998-5da6-4c6b-9f89-e272af7c9e85":["prompt-0"]},"attributes":{"uiType":"string","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f877c8fc-6207-4fbe-a1ee-2513a87ecafc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.prompt","label":"Flow Variables➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7fece902-1048-44e5-b375-3c30ccc1ee85":["prompt"],"a8235e24-2426-405c-bef4-21cdc07725e2":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"52b443d6-ee3a-4f75-ac71-5af663c840ca","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"08b93a81-b6f7-47e5-8563-5f5d4f44cbf6.Record","label":"1 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"b2e7338a-659d-4ea2-ac96-fa8c586345b2":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.prompt","label":"Input➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"acb2ec02-c41f-4e1c-8f60-27ae87b12e8d":["prompt"],"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e1fd982-ff73-487d-8831-b91ce4ee83ee","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5ee7270a-6e47-46e0-b229-d76665dc8a89.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"5ee7270a-6e47-46e0-b229-d76665dc8a89.Record","label":"3 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"6f8897dc-56e9-46ef-b5d6-596952819472":["log_message"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ee7270a-6e47-46e0-b229-d76665dc8a89.Record.sys_id","label":"3 - Look Up Record➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","usedInstances":{"7fece902-1048-44e5-b375-3c30ccc1ee85":["invoice_sys_id"],"b30bf43d-3160-447a-8e56-5bda3309aa15":["attachment_sys_id"],"a8235e24-2426-405c-bef4-21cdc07725e2":["invoice_sys_id"],"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa":["invoice_sys_id"]}},{"name":"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa.bot_answer","label":"4 - Generic Send and Receive Bot➛Bot Answer","type":"string","base_type":"string","usedInstances":{"f8ee2551-e40b-4ebe-a65a-7944f6bf8b56":["ai_matched_company-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6c2f149b-14c2-4b26-8db4-25e23aeac51d"}}]</label_cache>
+        <label_cache>[{"name":"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa.bot_answer","label":"1 - Generic Send and Receive Bot➛Bot Answer","reference_display":"Bot Answer","type":"string","base_type":"string","usedInstances":{"f8ee2551-e40b-4ebe-a65a-7944f6bf8b56":["ai_matched_company-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6c2f149b-14c2-4b26-8db4-25e23aeac51d"}},{"name":"08b93a81-b6f7-47e5-8563-5f5d4f44cbf6.Record","label":"1 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"b2e7338a-659d-4ea2-ac96-fa8c586345b2":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.prompt","label":"Flow Variables➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7fece902-1048-44e5-b375-3c30ccc1ee85":["prompt"],"a8235e24-2426-405c-bef4-21cdc07725e2":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"52b443d6-ee3a-4f75-ac71-5af663c840ca","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.company_name","label":"Input➛Company Name","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","usedInstances":{"04070998-5da6-4c6b-9f89-e272af7c9e85":["prompt-0"]},"attributes":{"uiType":"string","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f877c8fc-6207-4fbe-a1ee-2513a87ecafc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.prompt","label":"Input➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"acb2ec02-c41f-4e1c-8f60-27ae87b12e8d":["prompt"],"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e1fd982-ff73-487d-8831-b91ce4ee83ee","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>ad225eac830c0710f41ca430ceaad3dc</master_snapshot>
         <master_snapshot_digest/>
         <name>Get closest company from AI</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bd14925c83084310f41ca430ceaad38a</sys_id>
-        <sys_mod_count>144</sys_mod_count>
+        <sys_mod_count>179</sys_mod_count>
         <sys_name>Get closest company from AI</sys_name>
         <sys_overrides/>
         <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
@@ -44,16 +44,39 @@
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_update_name>sys_hub_flow_bd14925c83084310f41ca430ceaad38a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:56:39</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:57:31</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>8f88efa483a40b10f41ca430ceaad362</version_record>
+        <version_record>449f564183a90318f41ca430ceaad3f0</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=bd14925c83084310f41ca430ceaad38a"/>
     <sys_variable_value action="delete_multiple" query="document_key=bd14925c83084310f41ca430ceaad38a"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_bd14925c83084310f41ca430ceaad38a^id=bd14925c83084310f41ca430ceaad38a"/>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=bd14925c83084310f41ca430ceaad38a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=bd14925c83084310f41ca430ceaad38a^sys_idNOT IN0f8edda083ed0bd4f41ca430ceaad396"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</flow>
+        <label>Generic Send and Receive Bot</label>
+        <order>0</order>
+        <stage_id>cc136b35830c0310f41ca430ceaad34a</stage_id>
+        <states>{}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-14 22:56:31</sys_created_on>
+        <sys_id>0f8edda083ed0bd4f41ca430ceaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-14 22:56:31</sys_updated_on>
+        <type>subflow</type>
+        <value>0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa</value>
+    </sys_hub_flow_stage>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=bd14925c83084310f41ca430ceaad38a^sys_idNOT IN7514925c83084310f41ca430ceaad38f"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>bd14925c83084310f41ca430ceaad38a</id>
@@ -67,91 +90,7 @@
         <sys_updated_on>2026-03-31 18:37:47</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7514925c83084310f41ca430ceaad38f"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=bd14925c83084310f41ca430ceaad38a^sys_idNOT IN07641a5c83084310f41ca430ceaad3fe,27f35a64834c0710f41ca430ceaad3ac"/>
-    <sys_hub_flow_input action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f877c8fc-6207-4fbe-a1ee-2513a87ecafc</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>company_name</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="String">string</internal_type>
-        <label>Company Name</label>
-        <mandatory>true</mandatory>
-        <max_length>65000</max_length>
-        <model display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</model>
-        <model_id>bd14925c83084310f41ca430ceaad38a</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_input_bd14925c83084310f41ca430ceaad38a</name>
-        <next_element/>
-        <order>2</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_flow_input</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-31 18:39:15</sys_created_on>
-        <sys_id>07641a5c83084310f41ca430ceaad3fe</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 13:15:50</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=07641a5c83084310f41ca430ceaad3fe"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=bd14925c83084310f41ca430ceaad38a^sys_idNOT IN27f35a64834c0710f41ca430ceaad3ac,c0cadecd83290318f41ca430ceaad304"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -236,6 +175,90 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=27f35a64834c0710f41ca430ceaad3ac"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=f877c8fc-6207-4fbe-a1ee-2513a87ecafc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>company_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Company Name</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</model>
+        <model_id>bd14925c83084310f41ca430ceaad38a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bd14925c83084310f41ca430ceaad38a</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-16 16:36:30</sys_created_on>
+        <sys_id>c0cadecd83290318f41ca430ceaad304</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-16 16:57:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c0cadecd83290318f41ca430ceaad304"/>
     <sys_hub_flow_output action="delete_multiple" query="model=bd14925c83084310f41ca430ceaad38a^sys_idNOT INb1efc2e4830c0710f41ca430ceaad331"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -324,103 +347,8 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b1efc2e4830c0710f41ca430ceaad331"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd14925c83084310f41ca430ceaad38a"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=bd14925c83084310f41ca430ceaad38a"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=bd14925c83084310f41ca430ceaad38a^sys_idNOT IN5deb3da483080710f41ca430ceaad3be,8b61862883480710f41ca430ceaad356,d51abd2083080710f41ca430ceaad333"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</flow>
-        <generation_source/>
-        <order>3</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 11:30:33</sys_created_on>
-        <sys_id>5deb3da483080710f41ca430ceaad3be</sys_id>
-        <sys_mod_count>39</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:57:27</sys_updated_on>
-        <ui_id>5ee7270a-6e47-46e0-b229-d76665dc8a89</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYwW7bOBD9FUFnx5Us27JzKxIYKNA2QJPtpS0IiqRiYmlSpaikSZB/36FI2YKt2NauAyTYI4dD8s3MeyNSP55CTsPzkM6jeT6fT2ZpFCVJFE2nCcFxliVTkkUZHoeDUOIVA0+DM8FgeIdFZcflQ4mwMZgsV0wamKC8LAR++O7nP7bnyJILqpkMz3/8GoQF1rCnYTo8f9qaOhaUwBkT4HrjUW2BNA/FeojqOWf73F4WfHUTSlMLJRqE7I9hkjLAkGNRskG4wpJio/TD2qIZpldSbAxLDhGeh6F1/lPyRzh3Flm/nEFUhLm59RD5NDlzfokNvja6IqbS3pUsFSesdPmgLMeVMBdtm3O4KgxX0i1xYbvVSlQr+dWlI1xv0FQFLFUJIFhhA7XIfRj59VLdf2tQLrisc+InhSJYrEdQdc2zylg8TyETzBYZrXBRcHmLCq3ueL0YsKyGtwIGw1yoezi05LdyiIkFPoS84uEC7Je1+TvW3EbxBbaBxQCIC2AIciUsVaXrVN4hIqqyntBYlm6v8Hlg6XghcFluIoeUo9+Vxe3y4CNGLml2CdG8MB9hizvmg3seNLqY7KXgfEM5oiTlFkXZEodHDRLh9GcFW9A5ibJ4wsgsGUdRGkf5OCZ4nESEYUwTNt8V0L/ao6fQDkfZCO2iHWZX6F5yO7bPXRt4ycUnkxwk5D2JDg5/e5rrryKXggNSiulektENn0qlDXK5bGlpVxm9eX4EhIbnV5aZQfbwEipP85wzQbu+LAs7sfVlGf0/vyxvkuQAiCJXPS4Fl3WnBaCvxf7JXupl8RbPanq1LlnWhkuyqwEcGBU89lbCEXAaJVzD2cGNw9MBsen3NWW2e31j9AJITiaAZHQaATytw1wnsiPnzc3QVrPxf7T+eNsfKNhaED93CazXmXHfM0fPuwJOeim4TTY3c/kC5058hXxBkYPXbAFLWOrPQ06/6J7TW2Y2pzdeVJl7LP7umveMQ02h6vBe4Toa730RZa3rKM/RCirHC7g7akaAHPBM0wzlqpIU+fvyhki2kjnXpfHOu43mGwP9yECBMAOzZEHtHay9e36ID8fRpPJTHjSB+NPKAAIJ6kCCdSD9wu7TtMYnvJyeumktMBd1NeApVLTKybRW+oXGdaCQexhxZFc7ElR8UlD/ve11SaCz/R3A+i7e1advTfD4zMYjPE2TOI6iOKJpNEvTeDbN8ilOx/lGowiVkkA3hZ1zoApsjxpqNHWOdvuPa6l9G80RqBoKXippn9ej1AQWFtQ3aGAdBu4bSqaUYFhudZQb+E58WHj8nq+TN9dV3sVfporfbGfamTpz/Vr3hor/Jfnvin2yFJuxaDSLKTmbpXF6Ns7p9GxO8eQMz7NJmlBGxvkprwK//gEZRT7MsxUAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5deb3da483080710f41ca430ceaad3be"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Delete Files from bot">5751422883480710f41ca430ceaad36b</action_type>
-        <action_type_parent display_value="Delete Files from bot">39b22d1f83933a10f41ca430ceaad388</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>5751422883480710f41ca430ceaad36b</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</flow>
-        <generation_source/>
-        <order>5</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 11:54:43</sys_created_on>
-        <sys_id>8b61862883480710f41ca430ceaad356</sys_id>
-        <sys_mod_count>59</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:57:27</sys_updated_on>
-        <ui_id>ba0e1a2d-0434-4264-88af-d89da5d669c1</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/41SXWvjMBD8K4eeHWMnTmPyVloChfYK115fSjFraZUIZNnVR9pcyH+/Vew4oYXj3rSjnd3Z2X3dMyXYkol6nhfTaVnOijJb5Jkscg7FLOMIIGaLnCXMQIOUKZXGSglHyBZ0iBA9hXKdht3LGeEbpYVFw5avbwnrwBLdo2XL/Zev/+2voUZNqSsS8OPuKOC7JL/rIuK8VWY9xPcD8ekEtlZEIXnC8NOjEUgKJGiHCWvACPCt3Y2IRRCPRp+BjTK+H7GBT6f+UL8yy7KYKZGm4oMBY1gN5vSwvAUPJCVwH+zoVas4ut4PgRKC9jeXWJ/w2HnVmp7iodYndqtDY372XrCxwMUugiMR2MVRo/ZhEPm0aT9+nVSulDm6MnzqloMeI/DkXR181LNnQT1/sblHvhmNGhvqWDXQdYRUnW236tiFRDfpWlOQSt1+kDqn1iYFHidMaQWQrgi/PcIvYFUc94HKEDm2+23Ue8C7eDr1YiGnOC8n81rISVHmxYTOqJxc5UWe8TqvBZfskDC3czcanDsbRRuq3kMcs7dtMKjqPY4UblXnr0nUlii0Mzxh0Ybx7Oj9r0wWqKxUhs7scDi8/QVWDb4zcwMAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8b61862883480710f41ca430ceaad356"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Create Company List">d7f9f52083080710f41ca430ceaad398</action_type>
-        <action_type_parent display_value="Create Company List">0de8792c83c40710f41ca430ceaad3b7</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>d7f9f52083080710f41ca430ceaad398</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</flow>
-        <generation_source/>
-        <order>2</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 11:22:38</sys_created_on>
-        <sys_id>d51abd2083080710f41ca430ceaad333</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 14:14:31</sys_updated_on>
-        <ui_id>1229e3d6-b46c-482c-8e54-c1e7f9492a73</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d51abd2083080710f41ca430ceaad333"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=bd14925c83084310f41ca430ceaad38a^sys_idNOT IN4aed888283444310f41ca430ceaad3cd,cc612a6083004710f41ca430ceaad316"/>
-    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</flow>
-        <generation_source/>
-        <order>4</order>
-        <parent_ui_id/>
-        <show_stages>false</show_stages>
-        <subflow display_value="Generic Send and Receive Bot">cc136b35830c0310f41ca430ceaad34a</subflow>
-        <subflow_inputs>H4sIAAAAAAAA/+1V22rcMBD9leDnlZHk+74VSqDQNCVp81KCkeTxrkC+xJY32S777x2t7aTdNiGkofQhj5rrmTNz7G87Txfe0ktDFsQyiNKAKhowWoZMiRAfIEQRhKW38GpRAUa2XVO1Ft8bYQZn2O36QZamufVH136PzkL3rRHbq6di1FqbooPaW367Xnit6LCBhc5b7o5cdttCboQEg6UubafrFaY/F/ec+HkGfjyIK4/vfi7cdIVDwRce3FmoC8BGpTA9LLxK1IWwTbf1lrYb0NCBKM5rs72PWOvaYjHPxd71+jtWTimlLrIEnEjB6L1/5hNVo1mtG63gvLW6qUeLFdJMOaoxQ1V/GuE7kqEUg7EzyWgZeqwHrQPtYEyYyst1c3sxNzzV9WG+yWkaJcz9S1hkQQ4WereGQX854ma0fDzeBRiosGNeibZFS47cbvShC4Ku/JXBh+/2j+h6vap9odyEPpIp/FO0vz+Yr0Sn3bhnWAaTXbuvtb4Z4IPbNbAoobhfEgUpJ6GSQGQchCTOIs7CNInigHn7A7X5zeCGGkma6MhHRjGgV51u7TuEsIFp8v1iEkJBnzqomD7cj643bld5v+1zTP1ZEBFAwhMqSAxhQsIYKJGcZ6RI4jiOCpWKNPMvQOGl+WP6n0XzwjqvIaxn8DAnnmoDJ9j+5MDCY+w8orLgTWX/l8oEcMYoA8ITiSqLoozIhFMSZixLBZeRAvXXKsu4okyKMMVLovL4utLo4Y6qpkASHsS1gqoSwRLB/S6YX3yvIYJnwJwTzyacR7AfuXr29NVPlrez/3dnH+HvhJWCkjgt8VMr45JkEU2IYqwsQplyxeMXn/31D1XYYVRnCQAA</subflow_inputs>
-        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-05 19:20:54</sys_created_on>
-        <sys_id>4aed888283444310f41ca430ceaad3cd</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:06:27</sys_updated_on>
-        <ui_id>0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa</ui_id>
-        <updation_source/>
-        <wait_for_completion>true</wait_for_completion>
-    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=bd14925c83084310f41ca430ceaad38a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=bd14925c83084310f41ca430ceaad38a^sys_idNOT IN4aed888283444310f41ca430ceaad3cd"/>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
@@ -429,18 +357,18 @@
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
-        <show_stages>false</show_stages>
-        <subflow display_value="Delete rec">7b11aa2083004710f41ca430ceaad360</subflow>
-        <subflow_inputs>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</subflow_inputs>
+        <show_stages>true</show_stages>
+        <subflow display_value="Generic Send and Receive Bot">cc136b35830c0310f41ca430ceaad34a</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1VTW+bQBD9KxFnY7GwYPAtUhWpUtNUTZtLFKHZZbBXWj4CixPX8n/vrAFbJUoatVHVQ47z/ebtG7jdOSpzlk7MWRCJIIwDT3oB83LOJHAyECALeO7MnBIKpMy6qYrakL0B3VnHbtd2ItfVw7wP7fcUzFRba9jevJQj10pnDZbO8vZu5tTQ0ACDjbPcTUJmW2OqQaCmVtemUeWKyl+Leyz8MgKfLmLbk92Ojasmsyj8mYOPBssMaVAOusWZU0CZgamarbM0TUeOBiG7KvX2mLFWpaFmjs19bNUP6hx7nmczc6SNJPbRo5kOVPVuua6UxKvaqKrsPQaEHmpkpbui/NzDtyRjDp02I8nk6Vrqh7UFbWEMmPLrdfXwdRx4ocrDfkNQVxL00QJDLIjOYGufoVPfJtz0nk/Tt0CNBU1MC6hr8qTE7UYdphDoYr7SZMzt+xO6Vq3KOUi74ZzIhPkF+T8c3DfQKLvuJbWhYjvue6nuO/xo3xpZuPDofd0wiH2XS4GuiALuRknoMx4vwihgzv5AbXrf2aV6kgY60p5RSmhlo2pzThA2OGy+nw2HkPjSYwJ4HESeJ6aCisOTfooqIxJOd7DCogC+1EDkmacnMA2/hfpfAXYsvBzQTsA/o332svYHz7v4/534Q5I7y8FzozhfuFxEuZuE3sKVjOUZF7Ev/eivxU86goAjxEHCeB7yX/WU+Sf9EFUg14e1222bUvXpEJgfPJV/73yTT/7vQY6F50eUZ4Ty7IDyhQWeOYbg/Ufwf90CoM+Yx9D1F4J+BGGYuGLhey5PWBKDL0KJ8o9v4e4n4dBO+hMJAAA=</subflow_inputs>
         <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 14:14:19</sys_created_on>
-        <sys_id>cc612a6083004710f41ca430ceaad316</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-04-05 19:20:54</sys_created_on>
+        <sys_id>4aed888283444310f41ca430ceaad3cd</sys_id>
+        <sys_mod_count>27</sys_mod_count>
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 14:14:19</sys_updated_on>
-        <ui_id>63f89057-a3ca-4d36-9688-cd83206fe968</ui_id>
+        <sys_updated_on>2026-06-16 16:57:27</sys_updated_on>
+        <ui_id>0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa</ui_id>
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
@@ -456,17 +384,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
+        <order>2</order>
         <outputs_assigned>ai_matched_company</outputs_assigned>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-02 14:38:56</sys_created_on>
         <sys_id>5e907fb883c00310f41ca430ceaad38d</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:56:36</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:57:27</sys_updated_on>
         <ui_id>f8ee2551-e40b-4ebe-a65a-7944f6bf8b56</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VTTY/aMBD9KyufSZRAIMANtVpppW5X6tK9VFU0scdg1bGztgNLEf+9YxLYFYeqUm+ZN1/vPU+OzHah7YJf25X3amPY8seRKcGWrM5R8jEW80nGszLPZJFzKChAADGZ5GzEDDRIlaCqBgLfoqi4bVowB8rtQHcxeTxmshSFzEWSYz1OCszHCczqkr6mGc9hUS8A0tqGCozfozudqFso32o4vPzXEL5VWjiMmn6OWAuO6AZ0bHm8SYVDi5WGGjXteg5OmQ21/6sLl8aVunvsbbj7dLXhbxbFtZTzl4XWicguHzF8C2gEEgEJ2uOINWAEBOsOV8QhiCej34GtMoGmsVj85tVvGj2bZlkWSyWSVo59+hpWg8s9zLdWcXxqg7KmRwLUeujhVneN+dqLie+DEjodLu9DSOdpHraRduQxkJLPW7v/dll4r8xZ4ZDUloO+RhDIh7oL6OMDdWp9406PfLl9JdTY0Eayt20JqVpnd+q8hUg36UZTkEpt98QuHngKPCpMyU5I7wn/fIZfwKko95HGUHNc992o1w4fzlcwnmBZ8jqZzaeYFOVsnsBY1gnKLAMpi3pRSHY6W1u9dlFUb9JgR9U7SgWeO9WGFVHY4aD8RAeoTPwH+2PcDUyGUCBXngivI/bwoU4c6LYU/wjtrfsVpb5jpz/1fVVG4QMAAA==</values>
@@ -567,8 +495,8 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-31 18:39:15</sys_created_on>
-        <sys_id>1764169c83084310f41ca430ceaad349</sys_id>
+        <sys_created_on>2026-06-16 16:36:30</sys_created_on>
+        <sys_id>48cadecd83290318f41ca430ceaad32e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
@@ -576,7 +504,7 @@
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-31 18:39:15</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:36:30</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -642,7 +570,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>get_closest_company_from_ai</internal_name>
-        <label_cache>[{"name":"subflow.company_name","label":"Input➛Company Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"04070998-5da6-4c6b-9f89-e272af7c9e85":["prompt-0"]},"attributes":{"uiType":"string","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f877c8fc-6207-4fbe-a1ee-2513a87ecafc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.prompt","label":"Flow Variables➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7fece902-1048-44e5-b375-3c30ccc1ee85":["prompt"],"a8235e24-2426-405c-bef4-21cdc07725e2":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"52b443d6-ee3a-4f75-ac71-5af663c840ca","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"08b93a81-b6f7-47e5-8563-5f5d4f44cbf6.Record","label":"1 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"b2e7338a-659d-4ea2-ac96-fa8c586345b2":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.prompt","label":"Input➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"acb2ec02-c41f-4e1c-8f60-27ae87b12e8d":["prompt"],"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e1fd982-ff73-487d-8831-b91ce4ee83ee","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"5ee7270a-6e47-46e0-b229-d76665dc8a89.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","usedInstances":{},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"5ee7270a-6e47-46e0-b229-d76665dc8a89.Record","label":"3 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"6f8897dc-56e9-46ef-b5d6-596952819472":["log_message"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5ee7270a-6e47-46e0-b229-d76665dc8a89.Record.sys_id","label":"3 - Look Up Record➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","usedInstances":{"7fece902-1048-44e5-b375-3c30ccc1ee85":["invoice_sys_id"],"b30bf43d-3160-447a-8e56-5bda3309aa15":["attachment_sys_id"],"a8235e24-2426-405c-bef4-21cdc07725e2":["invoice_sys_id"],"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa":["invoice_sys_id"]}},{"name":"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa.bot_answer","label":"4 - Generic Send and Receive Bot➛Bot Answer","type":"string","base_type":"string","usedInstances":{"f8ee2551-e40b-4ebe-a65a-7944f6bf8b56":["ai_matched_company-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6c2f149b-14c2-4b26-8db4-25e23aeac51d"}}]</label_cache>
+        <label_cache>[{"name":"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa.bot_answer","label":"1 - Generic Send and Receive Bot➛Bot Answer","reference_display":"Bot Answer","type":"string","base_type":"string","usedInstances":{"f8ee2551-e40b-4ebe-a65a-7944f6bf8b56":["ai_matched_company-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6c2f149b-14c2-4b26-8db4-25e23aeac51d"}},{"name":"08b93a81-b6f7-47e5-8563-5f5d4f44cbf6.Record","label":"1 - Look Up Record➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"b2e7338a-659d-4ea2-ac96-fa8c586345b2":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.prompt","label":"Flow Variables➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7fece902-1048-44e5-b375-3c30ccc1ee85":["prompt"],"a8235e24-2426-405c-bef4-21cdc07725e2":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"52b443d6-ee3a-4f75-ac71-5af663c840ca","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.company_name","label":"Input➛Company Name","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","usedInstances":{"04070998-5da6-4c6b-9f89-e272af7c9e85":["prompt-0"]},"attributes":{"uiType":"string","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f877c8fc-6207-4fbe-a1ee-2513a87ecafc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.prompt","label":"Input➛Prompt","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"acb2ec02-c41f-4e1c-8f60-27ae87b12e8d":["prompt"],"0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa":["prompt"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e1fd982-ff73-487d-8831-b91ce4ee83ee","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
         <name>Get closest company from AI</name>
         <natlang/>
@@ -659,7 +587,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ad225eac830c0710f41ca430ceaad3dc</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -667,14 +595,37 @@
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:56:38</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:57:30</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=ad225eac830c0710f41ca430ceaad3dc"/>
     <sys_variable_value action="delete_multiple" query="document_key=ad225eac830c0710f41ca430ceaad3dc"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ad225eac830c0710f41ca430ceaad3dc^id=ad225eac830c0710f41ca430ceaad3dc"/>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=ad225eac830c0710f41ca430ceaad3dc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT INec9e91e083ed0bd4f41ca430ceaad30f"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Get closest company from AI">ad225eac830c0710f41ca430ceaad3dc</flow>
+        <label>Generic Send and Receive Bot</label>
+        <order>0</order>
+        <stage_id>cc136b35830c0310f41ca430ceaad34a</stage_id>
+        <states>{}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-14 22:56:36</sys_created_on>
+        <sys_id>ec9e91e083ed0bd4f41ca430ceaad30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-14 22:56:36</sys_updated_on>
+        <type>subflow</type>
+        <value>0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa</value>
+    </sys_hub_flow_stage>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT INf1225eac830c0710f41ca430ceaad3de"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>ad225eac830c0710f41ca430ceaad3dc</id>
@@ -688,7 +639,7 @@
         <sys_updated_on>2026-04-01 13:07:48</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f1225eac830c0710f41ca430ceaad3de"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT IN1f1492a4834c0710f41ca430ceaad314,f9225eac830c0710f41ca430ceaad3e0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT IN1f1492a4834c0710f41ca430ceaad314,938fd24183a90318f41ca430ceaad3d8"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -777,7 +728,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f877c8fc-6207-4fbe-a1ee-2513a87ecafc</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=f877c8fc-6207-4fbe-a1ee-2513a87ecafc</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -809,10 +760,10 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="JSON">json</internal_type>
         <label>Company Name</label>
         <mandatory>true</mandatory>
-        <max_length>65000</max_length>
+        <max_length>4000</max_length>
         <model display_value="Get closest company from AI">ad225eac830c0710f41ca430ceaad3dc</model>
         <model_id>ad225eac830c0710f41ca430ceaad3dc</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
@@ -834,16 +785,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 13:07:48</sys_created_on>
-        <sys_id>f9225eac830c0710f41ca430ceaad3e0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-06-16 16:57:29</sys_created_on>
+        <sys_id>938fd24183a90318f41ca430ceaad3d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 13:16:23</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:57:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -856,7 +807,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f9225eac830c0710f41ca430ceaad3e0"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=938fd24183a90318f41ca430ceaad3d8"/>
     <sys_hub_flow_output action="delete_multiple" query="model=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT INbd225eac830c0710f41ca430ceaad3f9"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -945,80 +896,8 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bd225eac830c0710f41ca430ceaad3f9"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ad225eac830c0710f41ca430ceaad3dc"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ad225eac830c0710f41ca430ceaad3dc"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT IN3d229eac830c0710f41ca430ceaad32f,79229eac830c0710f41ca430ceaad329,b9229eac830c0710f41ca430ceaad32a"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Delete Files from bot">5751422883480710f41ca430ceaad36b</action_type>
-        <action_type_parent display_value="Delete Files from bot">39b22d1f83933a10f41ca430ceaad388</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>5751422883480710f41ca430ceaad36b</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Get closest company from AI">ad225eac830c0710f41ca430ceaad3dc</flow>
-        <generation_source/>
-        <order>5</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 13:07:49</sys_created_on>
-        <sys_id>3d229eac830c0710f41ca430ceaad32f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 12:50:08</sys_updated_on>
-        <ui_id>ba0e1a2d-0434-4264-88af-d89da5d669c1</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/41SXWvjMBD8K4eeHWMnTmPyVloChfYK115fSjFraZUIZNnVR9pcyH+/Vew4oYXj3rSjnd3Z2X3dMyXYkol6nhfTaVnOijJb5Jkscg7FLOMIIGaLnCXMQIOUKZXGSglHyBZ0iBA9hXKdht3LGeEbpYVFw5avbwnrwBLdo2XL/Zev/+2voUZNqSsS8OPuKOC7JL/rIuK8VWY9xPcD8ekEtlZEIXnC8NOjEUgKJGiHCWvACPCt3Y2IRRCPRp+BjTK+H7GBT6f+UL8yy7KYKZGm4oMBY1gN5vSwvAUPJCVwH+zoVas4ut4PgRKC9jeXWJ/w2HnVmp7iodYndqtDY372XrCxwMUugiMR2MVRo/ZhEPm0aT9+nVSulDm6MnzqloMeI/DkXR181LNnQT1/sblHvhmNGhvqWDXQdYRUnW236tiFRDfpWlOQSt1+kDqn1iYFHidMaQWQrgi/PcIvYFUc94HKEDm2+23Ue8C7eDr1YiGnOC8n81rISVHmxYTOqJxc5UWe8TqvBZfskDC3czcanDsbRRuq3kMcs7dtMKjqPY4UblXnr0nUlii0Mzxh0Ybx7Oj9r0wWqKxUhs7scDi8/QVWDb4zcwMAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3d229eac830c0710f41ca430ceaad32f"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Create Company List">d7f9f52083080710f41ca430ceaad398</action_type>
-        <action_type_parent display_value="Create Company List">0de8792c83c40710f41ca430ceaad3b7</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>d7f9f52083080710f41ca430ceaad398</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Get closest company from AI">ad225eac830c0710f41ca430ceaad3dc</flow>
-        <generation_source/>
-        <order>2</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 13:07:49</sys_created_on>
-        <sys_id>79229eac830c0710f41ca430ceaad329</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 14:14:38</sys_updated_on>
-        <ui_id>1229e3d6-b46c-482c-8e54-c1e7f9492a73</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=79229eac830c0710f41ca430ceaad329"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Get closest company from AI">ad225eac830c0710f41ca430ceaad3dc</flow>
-        <generation_source/>
-        <order>3</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 13:07:49</sys_created_on>
-        <sys_id>b9229eac830c0710f41ca430ceaad32a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 14:14:38</sys_updated_on>
-        <ui_id>5ee7270a-6e47-46e0-b229-d76665dc8a89</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYwW7bOBD9FUFnx5Us27JzKxIYKNA2QJPtpS0IiqRiYmlSpaikSZB/36FI2YKt2NauAyTYI4dD8s3MeyNSP55CTsPzkM6jeT6fT2ZpFCVJFE2nCcFxliVTkkUZHoeDUOIVA0+DM8FgeIdFZcflQ4mwMZgsV0wamKC8LAR++O7nP7bnyJILqpkMz3/8GoQF1rCnYTo8f9qaOhaUwBkT4HrjUW2BNA/FeojqOWf73F4WfHUTSlMLJRqE7I9hkjLAkGNRskG4wpJio/TD2qIZpldSbAxLDhGeh6F1/lPyRzh3Flm/nEFUhLm59RD5NDlzfokNvja6IqbS3pUsFSesdPmgLMeVMBdtm3O4KgxX0i1xYbvVSlQr+dWlI1xv0FQFLFUJIFhhA7XIfRj59VLdf2tQLrisc+InhSJYrEdQdc2zylg8TyETzBYZrXBRcHmLCq3ueL0YsKyGtwIGw1yoezi05LdyiIkFPoS84uEC7Je1+TvW3EbxBbaBxQCIC2AIciUsVaXrVN4hIqqyntBYlm6v8Hlg6XghcFluIoeUo9+Vxe3y4CNGLml2CdG8MB9hizvmg3seNLqY7KXgfEM5oiTlFkXZEodHDRLh9GcFW9A5ibJ4wsgsGUdRGkf5OCZ4nESEYUwTNt8V0L/ao6fQDkfZCO2iHWZX6F5yO7bPXRt4ycUnkxwk5D2JDg5/e5rrryKXggNSiulektENn0qlDXK5bGlpVxm9eX4EhIbnV5aZQfbwEipP85wzQbu+LAs7sfVlGf0/vyxvkuQAiCJXPS4Fl3WnBaCvxf7JXupl8RbPanq1LlnWhkuyqwEcGBU89lbCEXAaJVzD2cGNw9MBsen3NWW2e31j9AJITiaAZHQaATytw1wnsiPnzc3QVrPxf7T+eNsfKNhaED93CazXmXHfM0fPuwJOeim4TTY3c/kC5058hXxBkYPXbAFLWOrPQ06/6J7TW2Y2pzdeVJl7LP7umveMQ02h6vBe4Toa730RZa3rKM/RCirHC7g7akaAHPBM0wzlqpIU+fvyhki2kjnXpfHOu43mGwP9yECBMAOzZEHtHay9e36ID8fRpPJTHjSB+NPKAAIJ6kCCdSD9wu7TtMYnvJyeumktMBd1NeApVLTKybRW+oXGdaCQexhxZFc7ElR8UlD/ve11SaCz/R3A+i7e1advTfD4zMYjPE2TOI6iOKJpNEvTeDbN8ilOx/lGowiVkkA3hZ1zoApsjxpqNHWOdvuPa6l9G80RqBoKXippn9ej1AQWFtQ3aGAdBu4bSqaUYFhudZQb+E58WHj8nq+TN9dV3sVfporfbGfamTpz/Vr3hor/Jfnvin2yFJuxaDSLKTmbpXF6Ns7p9GxO8eQMz7NJmlBGxvkprwK//gEZRT7MsxUAAA==</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b9229eac830c0710f41ca430ceaad32a"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT IN6c7162a083004710f41ca430ceaad382,b30e44c283444310f41ca430ceaad324"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ad225eac830c0710f41ca430ceaad3dc"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ad225eac830c0710f41ca430ceaad3dc^sys_idNOT INb30e44c283444310f41ca430ceaad324"/>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
@@ -1027,40 +906,17 @@
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
-        <show_stages>false</show_stages>
-        <subflow display_value="Delete rec">7b11aa2083004710f41ca430ceaad360</subflow>
-        <subflow_inputs>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</subflow_inputs>
-        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 14:14:38</sys_created_on>
-        <sys_id>6c7162a083004710f41ca430ceaad382</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 14:14:38</sys_updated_on>
-        <ui_id>63f89057-a3ca-4d36-9688-cd83206fe968</ui_id>
-        <updation_source/>
-        <wait_for_completion>true</wait_for_completion>
-    </sys_hub_sub_flow_instance_v2>
-    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <comment/>
-        <display_text/>
-        <flow display_value="Get closest company from AI">ad225eac830c0710f41ca430ceaad3dc</flow>
-        <generation_source/>
-        <order>4</order>
-        <parent_ui_id/>
-        <show_stages>false</show_stages>
+        <show_stages>true</show_stages>
         <subflow display_value="Generic Send and Receive Bot">cc136b35830c0310f41ca430ceaad34a</subflow>
-        <subflow_inputs>H4sIAAAAAAAA/+1V22rbQBD9lbDPltjVXX4rCYFC05Sk7UsIZrQa2QurS6SVE9fk3ztryXbqtCEuLZSSx7ntnDkzR7pZM5WzKUsC4UeZHyY+l9wXvAiEhIAMBMj9oGATVkGJlNm0ddkYspege+tYr7s+K3R97w6hx0cK5qprNKy+vpQjF0rnLVZsenM7YQ201MBgy6brg9BrEWrIUFPqpy3EQ8hm1Vi7M62q5qP9YSy63jrrNrcgvAnDB4NVjtS9AN3hhJVQ5WDqdsWmpu3J0SLkl5Ve7TIWqjL0GLO5D536Ru0SzrnNLJAGkjhEd+ZsZGpwF2dggJD00vTtmCoXtZLYDVTkWECvzelT35Bw2RhVV0OJgUxvq2vdl9XHgQi2e2C7GPL0HYHAxk5qsY+DFNeL+v5qi/JcVRtSxqCuJeidBYaoy3pj8axZrz4fsDx4nvGMGkvqOCuhacgzoy0t1aYLgS7duSbDtTdD6Do1r1yQdkKXNgDuOfnPNu6v0Co77gU9Q8W23ZdK3fX43l4NijDmdClO6CeeE8gMnSzyAydKQ08ESRxGvmCPE9atulMNXbcnijY0u+vtmANtI0GzgWNbIlvVmHcEaokjF4+TUU45f+lYI76/TVUt7fZmBGBGpU9lFSLGXszBiTCInSBC7mSelzp5HEVRmMsEktS9QkkH6w7lP5feb75znDxfMfFWnudK4wk1OtnM+ysejtGq/6bV/0CrgJ4QXKDjxRlpNQxTJ4s97gSpSBPwslCi/AtaTT3JRQZBQlfKs8PLTcL9jZZ1TrTsJTrHsgR/SnCfy+6H2HFSegWgrZQuRkQHAI/RjnhZO6PnTTz/uHhC+rWJArgTJQV95LOocNKQx44UosiDLPGkF/1B8dx+BzvpXR45CgAA</subflow_inputs>
+        <subflow_inputs>H4sIAAAAAAAA/+1V72vbMBD9V4o+x0GyZcfOt9JSGKzrWLd+KSWcZDkRyD9qy2mzkP99p9hOtgSyBjYYox/v3Z307ukeelwTnZIpiTkLIhGEcUAlDRjNOJPAMVAAacAzMiIF5Aorq7rMK4vxEkzrgPW6aUVmypdxl9psMJnqpjKwejhVIxfapLUqyPTxaUQqqPECq2oyXR+k3srQgFAGSz8PFA8p21Xl4sbWupj38ce+6X4Ayzp1JPwRUa9WFanC2zMwjRqRHIoUbFmvyNTWLQK1gvSuMKtdxUIXFg8jrva10d/xuphS6iozhQNJ1WV34axXqoOza7CATFpp27ovlYtSS9V0UqQqg9bYq5+xruCusrosuhYLwgzdpWnz4lMnBNkdMDwMIm2DJFTlJnXc+0Gy+0X58mVgeaOLrSh90pQSzC4Ci9KJ1jo+a9Lqrwcqd8iRzsqoHG+c5VBViMzwlZZ6ewuSzsdzg8HY7Qyya/S8GIN0E47xBWB8g/j1Fn6AWrtxb/EYbHbXfSv0c6s+uK1RLJxQ3BQvDGLf41IoT0QB96Ik9BmPJ2EUMLIZkWbVXBlomr1Q+EKz59aN2cnWCzTrNHYtstaVvURSS9VrsRn1dkp8SZkAHgcRpeJwWeNwv5t5maIsezfNVZ4DnxpAOe2xkQ7T53noDbQGD932vA5onuMgdtpBPfJuoX/cQiGahmVAvSjOJh4XUeYlIZ14krEs5SL2pR/9BQvhjkLAFcRBwngW8l93NfX3u4nigVxshUAOM+ze24n5wbGJOvDM7+f3dAbrXO74XCCfiy2fE1TPsVTw/in9B44C5TNGmfL8icBPKQwTT0x86vGEJTH4IpRK/kFHPf0AX0qASOUJAAA=</subflow_inputs>
         <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-05 19:21:33</sys_created_on>
         <sys_id>b30e44c283444310f41ca430ceaad324</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 14:17:31</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:57:30</sys_updated_on>
         <ui_id>0f7d4f1d-1eb2-4e12-a6b7-4e50c1a9b9aa</ui_id>
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>
@@ -1077,17 +933,17 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
+        <order>2</order>
         <outputs_assigned>ai_matched_company</outputs_assigned>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-02 14:41:02</sys_created_on>
         <sys_id>c9113b3c83c00310f41ca430ceaad3da</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:56:38</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:57:30</sys_updated_on>
         <ui_id>f8ee2551-e40b-4ebe-a65a-7944f6bf8b56</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VT22rjMBD9laLnONiJc2neQkqh0G5hm+3LUsxYGiWisuRKctJsyL/vKHYubGFZ2DfNmYvOOSPtmW1C3QS/tHPv1cqw2c89U4LNWJmh5APMp8OUp5MslXnGIacAAcRwmLEeM1AhVYIqKgh8jaLgtqrB7Ci3Ad3E5H6fyonIZSaSDMtBkmM2SGBcTug0SnkGt+UtQL+0oQDjt+gOB+oWytcadq//NYSvlRYOo6a3HqvBEd2Ajs1IoaGDAf2ozDvN/1L8rw5oKFFT6VzdPLUW3CzOFvzNnrCrY84Hp8yqix+7YS8n0DoR6WY9hp8BjUBiJUF77LEKjIBg3e6MOATxbPQFWJPIVlsFn179ovvGozRNY6lEksqxTZ/DorO9heUdBCAuDQ+Nw5NLVnH0rUkCJTQ6LK6xtuC5DsqatiVAqU/dVjeV+dbaws4DTlsmpPFEAuuoNZLvlMiXtd1+P7G8V+ZoS5fUloM+RxDIvLIJkc+eNWr5h88t8sVp1FjRjbSouiakqJ3dqOMtRLrqrzQFfantltjFb9IHHhX2aQfQvyf87gi/glNR7hONoeZ43Q+jPhp8OL6nwRAnE14m4+kIk3wyniYwkGWCMk1Byry8zSU79Jjf+YUG7y9G0YaKjybKbG3rDCpaj2MLd6oOcyK1wc6LQ3zGJv7tdjObjtt5eVx5krCM2MNVndjRu1X8Gtpa9x7FX7DDbx5E4T85BAAA</values>
@@ -1179,6 +1035,29 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_variable>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>company_name</element>
+        <help/>
+        <hint/>
+        <label>Company Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ad225eac830c0710f41ca430ceaad3dc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-16 16:57:29</sys_created_on>
+        <sys_id>2b8fd24183a90318f41ca430ceaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-16 16:57:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>prompt</element>
         <help/>
         <hint/>
@@ -1198,29 +1077,6 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-04-01 13:16:23</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>company_name</element>
-        <help/>
-        <hint/>
-        <label>Company Name</label>
-        <language>en</language>
-        <name>var__m_sys_hub_flow_input_ad225eac830c0710f41ca430ceaad3dc</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-04-01 13:07:48</sys_created_on>
-        <sys_id>f5225eac830c0710f41ca430ceaad3f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 13:07:48</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1260,16 +1116,16 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"82229eac830c0710f41ca430ceaad37b","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Get closest company from AI">bd14925c83084310f41ca430ceaad38a</plan_id>
-        <snapshot>e2b86be483a40b10f41ca430ceaad392</snapshot>
+        <snapshot>e1ff12c183a90318f41ca430ceaad3ce</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-04-01 13:07:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>82229eac830c0710f41ca430ceaad37b</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-26 15:56:39</sys_updated_on>
+        <sys_updated_on>2026-06-16 16:57:31</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

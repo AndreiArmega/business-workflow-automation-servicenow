@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition_script/>
+        <description/>
+        <event_name>activate.life.cycle.migration</event_name>
+        <name>Langflow Call 2</name>
+        <order>100</order>
+        <script><![CDATA[try {
+    // 1. Extragem datele din evenimentul declanșat de interfață
+    var eventData = JSON.parse(event.parm2);
+    var tipProcesare = eventData.type;              
+    var instr = eventData.instructions;
+    var sysId = current.getUniqueValue(); // Preluăm ID-ul facturii curente
+
+    // 2. Construim promptul pentru AI
+    var promptAi = "Process the invoice with the sys_id " + sysId + ". ";
+    promptAi += "The required processing type is: " + tipProcesare + ". ";
+    
+    if (instr && instr.trim() !== '') {
+        promptAi += "Please follow these additional instructions from the user: " + instr;
+    }
+
+    // 3. Setăm URL-urile și Cheile
+    // Webhook-ul pe care l-ai creat la Pasul 1
+    var webhookUrl = "https://dev312356.service-now.com/api/x_1815796_itsmgr_0/langflow2/inbox"; 
+    
+    // ATENȚIE: Pune aici noul link ngrok și ID-ul noului flux ASYNC din Langflow!
+    var endpoint = 'https://21bc-2a02-2f0f-b109-dd00-c972-f432-30e0-f1b5.ngrok-free.app/api/v1/run/ID_FLUX_NOU_ASYNC';
+    var apiKey = 'sk-lRXpy4XnxMsJE04NfAgPNNDMtZlRIiJZp2SxdC9s3SM'; 
+
+    // 4. Construim Payload-ul
+    // Adăugăm webhook_url și sys_id în structura `tweaks` (sau direct în payload) pentru ca nodul final din Langflow să aibă acces la ele
+    var payload = {
+        "output_type": "chat",
+        "input_type": "chat",
+        "input_value": promptAi,
+        "session_id": gs.generateGUID(),
+        "tweaks": {
+            "webhook_url": webhookUrl,
+            "sys_id": sysId
+        }
+    };
+
+    // 5. Inițiem apelul REST (Modul Fire-and-Forget)
+    var request = new sn_ws.RESTMessageV2();
+    request.setEndpoint(endpoint);
+    request.setHttpMethod('POST');
+    request.setRequestHeader("Content-Type", "application/json");
+    request.setRequestHeader("x-api-key", apiKey);
+    request.setRequestBody(JSON.stringify(payload));
+
+    // Aici este magia ASYNC: executeAsync() trimite cererea și eliberează sistemul instant!
+    // FĂRĂ TIMEOUT, FĂRĂ AȘTEPTARE!
+    request.executeAsync(); 
+
+    // 6. Punem un mesaj în Work Notes ca să știm că a plecat
+    current.work_notes = "]]>🚀<![CDATA[ [ASYNC] Cererea a fost trimisă către Langflow în fundal.\nWebhook-ul a fost armat și așteaptă răspunsul pe: " + webhookUrl;
+    current.update();
+    
+} catch (ex) {
+    // Dacă pică ceva strict la trimitere
+    gs.error("Eroare la trimiterea asincronă către Langflow: " + ex.message);
+    current.work_notes = "⚠️ Eroare la trimiterea asincronă către Langflow: " + ex.message;
+    current.update();
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-20 14:03:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2ad56de83694358f41ca430ceaad3f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Langflow Call 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sysevent_script_action_a2ad56de83694358f41ca430ceaad3f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-20 14:03:21</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

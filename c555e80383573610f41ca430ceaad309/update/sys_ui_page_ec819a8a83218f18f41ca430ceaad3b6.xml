@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1815796_itsmgr_0_langflow_options_modal.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <g:ui_form>
+        <input type="hidden" name="record_sys_id" value="${sysparm_record_sys_id}" />
+        <input type="hidden" name="table_name" value="${sysparm_table_name}" />
+
+        <div style="padding: 15px;">
+            <div class="form-group">
+                <label for="processing_type"><b>Tip Procesare:</b></label>
+                <select id="processing_type" name="processing_type" class="form-control" style="width: 100%; margin-bottom: 15px;">
+                    <option value="Extract the data only. Resource matching is not necessary. Do not try to match against the database.">
+                        Data extraction Only (No Resource Matching)
+                    </option>
+                    
+                    <option value="Perform resource matching only. The data extraction happened already and is not necessary. Take the existing data as it is and match it.">
+                        Resource Matching Only (The data extraction happened already)
+                    </option>
+                    
+                    <option value="Perform the full process: extract all necessary data from the document and then perform resource matching and validation.">
+                        Full process
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="additional_instructions"><b>Additional instructions:</b></label>
+                <textarea id="additional_instructions" name="additional_instructions" class="form-control" rows="4" style="width: 100%; margin-bottom: 15px;" placeholder="Ex: Fii atent la detaliile bancare..."></textarea>
+            </div>
+        </div>
+
+        <footer class="modal-footer" style="padding: 10px; text-align: right; border-top: 1px solid #e5e5e5;">
+            <button class="btn btn-default" onclick="GlideModal.get().destroy(); return false;" style="margin-right: 10px;">Anulează</button>
+            <button type="submit" class="btn btn-primary">Trimite către AI</button>
+        </footer>
+    </g:ui_form>
+</j:jelly>]]></html>
+        <name>langflow_options_modal</name>
+        <processing_script><![CDATA[var rec = new GlideRecord(table_name);
+if (rec.get(record_sys_id)) {
+    
+    var payload = {
+        user_id: gs.getUserID(),
+        type: processing_type, 
+        instructions: additional_instructions 
+    };
+
+    gs.eventQueue('x_1815796_itsmgr_0.langflow_processing', rec, rec.getUniqueValue(), JSON.stringify(payload));
+    
+    gs.addInfoMessage("Cererea a fost trimisă către Serverul de procesare în fundal. Factura se va actualiza automat când primim răspunsul.");
+}
+
+response.sendRedirect(table_name + '.do?sys_id=' + record_sys_id);]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-19 18:31:17</sys_created_on>
+        <sys_id>ec819a8a83218f18f41ca430ceaad3b6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>langflow_options_modal</sys_name>
+        <sys_package display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture" source="x_1815796_itsmgr_0">c555e80383573610f41ca430ceaad309</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="iTSMgroup Task Automatization by OpenWebUI RAG architecture">c555e80383573610f41ca430ceaad309</sys_scope>
+        <sys_update_name>sys_ui_page_ec819a8a83218f18f41ca430ceaad3b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-19 18:54:30</sys_updated_on>
+    </sys_ui_page>
+</record_update>
